@@ -2,6 +2,8 @@
 *{
     margin: 0;
     padding: 0;
+    position: relative;
+    color: #ffffff;
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -16,7 +18,69 @@
 }
 
 body{
-    color: #ffffff;
     background-color: #1E1E1E;
 }
 
+/* HEADER */
+header img{
+    position: fixed;
+    left: 10px;
+    z-index: 10;
+}
+
+/* HEADER / NAVIGATION */
+header img, nav img{
+    width: 40px;
+    top: 10px;
+    cursor: pointer;
+    opacity: .5;
+    transition: ease-in-out .3s;
+}
+
+nav img:hover, header img:hover{
+    opacity: 1;
+}
+
+/* NAVIGATION*/
+/* Menu */
+nav{
+    background-color: #0E0E0E;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    z-index: 100;
+    transition: all .5s;
+    left: -300px;
+}
+    nav img{
+        position: absolute;
+        right: 10px;
+        z-index: 200;
+    }
+
+    li{
+        padding: 20px;
+        list-style: none;
+        transition: ease-in-out .25s;
+    }
+
+        li a{
+            font-family: "Inter";
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+            /* Sub menu */
+            #sub_menu a{
+                font-size: 16px;
+                background-color: #0E0E0E;
+            }
+
+li:hover{
+    background-color: #1F1530;
+}
+
+/* Sub menu */
+#sub_menu{
+    display: none;
+}

@@ -6,35 +6,43 @@
     <title>Portfolio</title>
     <!-- Link sylesheet -->
     <link rel="stylesheet" href="stylesheet/stylesheet.css">
-    <!-- Import Dosis font -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Import Dosis font -->
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
     <!-- Import Hammersmith One font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <!-- Import Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
     <header>
-        
+        <!-- Open icon menu -->
+         <img src="asset/icon/icons8-menu-96.png" alt="openMenuIcon" onclick="openCloseNav()">
     </header>
     <!-- Navigation menu -->
-    <nav>
+    <nav id="nav_menu">
+        <!-- Close menu icon -->
+        <img src="asset/icon/icons8-cross-96.png" alt="openMenuIcon" onclick="openCloseNav()">
         <ul>
             <!-- Profile -->
-            <li><a href="#profil">Profil</a>
-                <!-- Sub menu -->
-                <ul>
+            <li onclick="openCloseSubMenu()"><a href="#profile">Profil</a>
+            <!-- Sub menu -->
+                <ul id="sub_menu">
                     <li><a href="#presentation">Présentation</a></li>
-                    <li><a href="#parcours">Parcours</a></li>
-                    <li><a href="#competence">Compétences</a></li>
+                    <li><a href="#career_path">Parcours</a></li>
+                    <li><a href="#skill">Compétences</a></li>
                 </ul>
             </li>
-            <li><a href="#projet">Projets</a></li>
-            <li><a href="#exp_pro">Expériences Professionelles</a></li>
-            <li><a href="html/veille_tech.html">Veille Technologique</a></li>
+            <!-- Project -->
+            <li><a href="#project">Projets</a></li>
+            <!-- Professional Experience -->
+            <li><a href="#pro_exp">Expériences Professionelles</a></li>
+            <!-- Technological watch -->
+            <li><a href="html/technological.html">Veille Technologique</a></li>
+            <!-- Contact -->
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -42,32 +50,32 @@
     <!-- Content -->
     <main>
         <!-- Profile -->
-        <div id="profil">
+        <div id="profile">
             <!-- Presentation -->
             <section id="presentation">
                 <h1 class="hammersmith-one-regular">SERRE Quentin</h1>
                 <h2>Etudiant BTS SIO</h2>
             </section>
             <!-- Career path -->
-            <section id="parcours">
+            <section id="career_path">
 
             </section>
             <!-- Skills -->
-            <section id="competence">
+            <section id="skill">
 
             </section>
             
         </div>
         <!-- Parcours -->
-        <div id="parcours">
+        <div id="career_path">
 
         </div>
         <!-- Skills -->
-        <div id="competence">
+        <div id="skill">
 
         </div>
         <!-- Project -->
-        <div id="projet">
+        <div id="project">
 
         </div>
         <!-- Contact -->
@@ -81,4 +89,6 @@
 
     </footer>
 </body>
+<!-- Link scripsheet -->
+<script src="js/script.js"></script>
 </html>
