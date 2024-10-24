@@ -8,6 +8,7 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    scroll-behavior: smooth;
 }
 
 /* Using the Hammersmith font */
@@ -100,5 +101,29 @@ li a:hover{
 
 /* MAIN */
 main{
-    height: 1200px;
+    height: 2000px;
 }
+
+/* Profile */
+#presentation{
+    height: 100vh;
+}
+
+#presentation img{
+    height: 90vh;
+    left: 15vh;
+    filter: drop-shadow(#2b1d44 3px 3px 30px);
+}
+
+#description{
+    position: absolute;
+    right: 20vh;
+    top: 25vh;
+}
+
+#description h1, #description h2{
+    font-size: 8vh;
+    margin:8vh;
+}
+
+
