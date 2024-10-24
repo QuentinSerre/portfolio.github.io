@@ -72,7 +72,10 @@ nav{
 
             /* Sub menu */
             #sub_menu{
-                display: none;
+                display: block;
+                height: 0px;
+                overflow: hidden;
+                transition: all .5s;
             }
 
             #sub_menu a{
@@ -86,7 +89,7 @@ li a:hover{
 
 /* Sub menu */
 #has_sub_menu:hover #sub_menu{
-    display: block;
+    height: 180px;
 }
 
 #sub_menu a:hover{
