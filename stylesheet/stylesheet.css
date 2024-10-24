@@ -59,28 +59,43 @@ nav{
     }
 
     li{
-        padding: 20px;
         list-style: none;
-        transition: ease-in-out .25s;
     }
 
         li a{
             font-family: "Inter";
             text-decoration: none;
             font-size: 20px;
+            padding: 20px;
+            display: block;
         }
 
             /* Sub menu */
-            #sub_menu a{
-                font-size: 16px;
-                background-color: #0E0E0E;
+            #sub_menu{
+                display: none;
             }
 
-li:hover{
+            #sub_menu a{
+                font-size: 16px;
+                padding-left: 50px;
+            }
+
+li a:hover{
     background-color: #1F1530;
 }
 
 /* Sub menu */
-#sub_menu{
-    display: none;
+#has_sub_menu:hover #sub_menu{
+    display: block;
+}
+
+#sub_menu a:hover{
+    background-color: #1F1530;
+    height: 100%;
+}
+
+
+/* MAIN */
+main{
+    height: 1200px;
 }
