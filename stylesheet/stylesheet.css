@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     position: relative;
-    color: #ffffff;
     font-family: "Dosis", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -20,6 +19,7 @@
 
 body{
     background-color: #1E1E1E;
+    color: #ffffff;
 }
 
 /* HEADER */
@@ -64,6 +64,7 @@ nav{
     }
 
         li a{
+            color: #ffffff;
             font-family: "Inter";
             text-decoration: none;
             font-size: 20px;
@@ -105,25 +106,88 @@ main{
 }
 
 /* Profile */
+/* Presentation */
 #presentation{
-    height: 100vh;
+    height: 120vh;
+    background: linear-gradient(#1E1E1E 88%, #573B85 );
 }
 
-#presentation img{
-    height: 90vh;
-    left: 15vh;
-    filter: drop-shadow(#2b1d44 3px 3px 30px);
+    #presentation img{
+        height: 90vh;
+        left: 15vh;
+        filter: drop-shadow(#2b1d44 3px 3px 30px);
+    }
+
+    #description{
+        position: absolute;
+        right: 20vh;
+        top: 25vh;
+    }
+
+        #description h1, #description h2{
+            font-size: 8vh;
+            margin:8vh;
+        }
+
+/* Career path */
+#career_path{
+    background: linear-gradient(#573B85 65%, #1E1E1E);
+    padding: 50px 0px 50px 0px;
+    width: 100%;
+    height: 800px;   /* ATTENTION VALEUR TES */
 }
 
-#description{
-    position: absolute;
-    right: 20vh;
-    top: 25vh;
+    .card{
+        position: absolute;
+        border-radius: 15px;
+        background-color: #FFFFFF;
+        box-shadow: 0px 0px 5px #0E0E0E;
+        padding: 20px;
+        text-align: center;
+        color: #0E0E0E;
+        width: 250px;
+    }
+
+    .card h3{
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+        .card li{
+            padding: 3px;
+            font-size: 18px;
+        }
+
+        .card > img{
+            width: 96px;
+            position: absolute;
+            top: -45px;
+            right: -48px;
+            filter: drop-shadow(0px 0px 3px);
+        }
+
+        .sportIcon{
+            position: absolute;
+            width: 36px;
+            right: 30px;
+            bottom: -8px;
+        }
+    
+    .bac{
+        left: 10%;
+    }
+
+    .licence{
+        left: 40%;
+        right: 50%;
+    }
+
+    .bts{
+        right: 10%;
+    }
+
+/* Skills */
+#skill{
+    height: 120vh;
 }
-
-#description h1, #description h2{
-    font-size: 8vh;
-    margin:8vh;
-}
-
-
