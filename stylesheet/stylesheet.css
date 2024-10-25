@@ -131,14 +131,14 @@ main{
 
 /* Career path */
 #career_path{
-    background: linear-gradient(#573B85 65%, #1E1E1E);
-    padding: 50px 0px 50px 0px;
+    /* background: linear-gradient(#573B85 65%, #1E1E1E); */
+    background-color: #573B85;
+    padding: 500px 0px 500px 0px;
     width: 100%;
-    height: 800px;   /* ATTENTION VALEUR TES */
+    border: 1px solid red;                                      /* ATTENTION TEMP*/
 }
 
     .card{
-        position: absolute;
         border-radius: 15px;
         background-color: #FFFFFF;
         box-shadow: 0px 0px 5px #0E0E0E;
@@ -173,21 +173,104 @@ main{
             right: 30px;
             bottom: -8px;
         }
-    
+
+/* Career tree */
+.abs_elm_centered{
+    margin-left: auto;
+    margin-right: auto;
+    inset: 0;
+}
+
+.career_line{
+    width: 80%;
+    height: 0;
+    inset: 0;
+    margin: auto;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.vertical_line{
+    position: absolute;
+}
+
+.circle{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    z-index: 1000;
+    top: -8px;
+    position: absolute;
+}
+
+.start_point{
+    left: -8px;
+}
+
+.career_point{
+    background-color: #FCB222;
+}
+
+.end_point{
+    right: -8px;
+}
+
+    /* Bac position elm */
     .bac{
-        left: 10%;
-    }
+        border: 1px solid red;
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        margin-left: 20%;
 
+    }
+        /* bac point */
+        .bac_point{
+
+        }
+
+        /* Bac line */
+        .bac_line{
+            margin: auto;
+        }
+
+            /* Bac card */
+            .bac_card{
+                bottom: 0;
+            }
+
+    /* Licence position elm */
     .licence{
-        left: 40%;
-        right: 50%;
+        position: absolute;
     }
 
+        /* Licence line */
+        .licence_line{
+
+        }
+
+            /* Licence card */
+            .Licence_card{
+                
+            }
+    /* Bac position elm */
     .bts{
-        right: 10%;
+        position: absolute;
     }
+
+        /* Bac line */
+        .bts_line{
+
+        }
+
+            /* Bts card */
+            .bts_card{
+                
+            }
+
 
 /* Skills */
 #skill{
-    height: 120vh;
+    height: 1200px;
 }
