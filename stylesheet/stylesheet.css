@@ -22,6 +22,22 @@ body{
     color: #ffffff;
 }
 
+/* h1 for section */
+.bg_title{
+    font-size: 10vh;
+    font-weight: bold;
+    opacity: .1;
+    position: absolute;
+    margin: auto;
+    inset: 0;
+}
+
+h2{
+    margin: 3vh;
+    font-size: 6vh;
+}
+
+
 /* HEADER */
 header img{
     position: fixed;
@@ -134,6 +150,11 @@ main{
     background: linear-gradient(#573B85 88%, #1E1E1E);
     background-color: #573B85;
     padding: 450px 0px 520px 0px;
+    text-align: center;
+}
+
+#career_path h2{
+    top: -450px;
 }
 
     .card{
@@ -141,7 +162,6 @@ main{
         background-color: #FFFFFF;
         box-shadow: 0px 0px 5px #0E0E0E;
         padding: 20px;
-        text-align: center;
         color: #0E0E0E;
         width: 250px;
         transition: all .3s;
@@ -204,7 +224,6 @@ main{
     margin: auto;
     border: 2px solid #ffffff;
     border-radius: 5px;
-    text-align: center;
 }
 
 .vertical_line{
@@ -286,4 +305,7 @@ main{
 /* Skills */
 #skill{
     height: 1200px;
+    text-align: center;
+    border: 1px solid red;
+    margin: 50px 0px 50px 0px;
 }
