@@ -131,11 +131,9 @@ main{
 
 /* Career path */
 #career_path{
-    /* background: linear-gradient(#573B85 65%, #1E1E1E); */
+    background: linear-gradient(#573B85 88%, #1E1E1E);
     background-color: #573B85;
-    padding: 500px 0px 500px 0px;
-    width: 100%;
-    border: 1px solid red;                                      /* ATTENTION TEMP*/
+    padding: 450px 0px 520px 0px;
 }
 
     .card{
@@ -146,6 +144,7 @@ main{
         text-align: center;
         color: #0E0E0E;
         width: 250px;
+        transition: all .3s;
     }
 
     .card h3{
@@ -174,12 +173,29 @@ main{
             bottom: -8px;
         }
 
+.card:hover{
+    scale: 1.2;
+}
+
 /* Career tree */
 .abs_elm_centered{
     margin-left: auto;
     margin-right: auto;
     inset: 0;
 }
+
+.date{
+    font-weight: bold;
+    font-size: 20px;
+}
+        /* Up */
+        .date_up{
+            top: -50px;
+        }
+        /* Down */
+        .date_down{
+            top: 30px;
+        }
 
 .career_line{
     width: 80%;
@@ -188,10 +204,17 @@ main{
     margin: auto;
     border: 2px solid #ffffff;
     border-radius: 5px;
+    text-align: center;
 }
 
 .vertical_line{
     position: absolute;
+    height: 120px;
+    width: 0px;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .circle{
@@ -199,7 +222,7 @@ main{
     height: 16px;
     border-radius: 50%;
     background-color: #ffffff;
-    z-index: 1000;
+    z-index: 10;
     top: -8px;
     position: absolute;
 }
@@ -210,6 +233,11 @@ main{
 
 .career_point{
     background-color: #FCB222;
+    transition: all .3s;
+}
+
+.career_point:hover{
+    scale: 2;
 }
 
 .end_point{
@@ -218,56 +246,41 @@ main{
 
     /* Bac position elm */
     .bac{
-        border: 1px solid red;
-        width: 300px;
-        height: 300px;
         position: absolute;
-        margin-left: 20%;
-
+        margin-left: 15%;
     }
-        /* bac point */
-        .bac_point{
 
+        /* Bac card */
+        .bac_card{
+            top: 120px;
         }
-
-        /* Bac line */
-        .bac_line{
-            margin: auto;
-        }
-
-            /* Bac card */
-            .bac_card{
-                bottom: 0;
-            }
 
     /* Licence position elm */
     .licence{
         position: absolute;
+        inset: 0;
+        margin: auto;
     }
 
-        /* Licence line */
         .licence_line{
-
+            top: -120px;
         }
 
-            /* Licence card */
-            .Licence_card{
-                
-            }
+        /* Licence card */
+        .licence_card{
+            top: -345px;
+        }
+
     /* Bac position elm */
     .bts{
         position: absolute;
+        margin-left: 63%;
     }
 
-        /* Bac line */
-        .bts_line{
-
+        /* Bts card */
+        .bts_card{
+            top: 120px;
         }
-
-            /* Bts card */
-            .bts_card{
-                
-            }
 
 
 /* Skills */
