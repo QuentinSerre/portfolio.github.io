@@ -148,7 +148,6 @@ main{
 /* Career path */
 #career_path{
     background: linear-gradient(#573B85 88%, #1E1E1E);
-    background-color: #573B85;
     padding: 450px 0px 520px 0px;
     text-align: center;
 }
@@ -308,4 +307,28 @@ main{
     text-align: center;
     border: 1px solid red;
     margin: 50px 0px 50px 0px;
+    transform: perspective();
+}
+
+.bg_skill{
+    background: linear-gradient(.3turn, #48d33c, #573B85 60%);
+    border-radius: 25px;
+    width:700px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 20px;
+    filter: blur(2px);
+    opacity: .5;
+    transition: all .5s;
+    transform: perspective(800px) rotateX(10deg) rotateY(25deg) scale(0.9);
+}
+
+.bg_skill:hover{
+    transform: perspective(800px) rotateX(10deg) rotateY(-15deg) translateY(-50px) scale(1);
+    filter: blur(0);
+    opacity: 1;
+}
+
+.item{
 }
