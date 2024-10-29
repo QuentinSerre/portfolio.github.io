@@ -158,8 +158,8 @@ main{
 
     .card{
         border-radius: 15px;
-        background-color: #FFFFFF;
-        box-shadow: 0px 0px 5px #0E0E0E;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 5px #363636;
         padding: 20px;
         color: #0E0E0E;
         width: 250px;
@@ -194,6 +194,7 @@ main{
 
 .card:hover{
     scale: 1.2;
+    box-shadow: 0px 0px 15px #363636;
 }
 
 /* Career tree */
@@ -305,30 +306,78 @@ main{
 #skill{
     height: 1200px;
     text-align: center;
-    border: 1px solid red;
     margin: 50px 0px 50px 0px;
-    transform: perspective();
 }
 
-.bg_skill{
-    background: linear-gradient(.3turn, #48d33c, #573B85 60%);
-    border-radius: 25px;
-    width:700px;
-    padding: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
-    grid-gap: 20px;
-    filter: blur(2px);
-    opacity: .5;
-    transition: all .5s;
+#skill h2{
+    top: 1.5vw;
+    margin-bottom: 200px;
+}
+
+    .skill_container{
+        display: flex;
+        margin: 100px 50px 0px 50px;
+    }
+
+        .skill_container h3{
+            font-size: 30px;
+            font-weight: bold;
+            padding: 60px 0px 30px 0px;
+        }
+
+        .skill_container p{
+            font-size: 20px;
+            text-align: justify;
+            line-height: 30px;
+        }
+
+        .container_left{
+            width: 50%;
+            text-align: left;
+        }
+
+        aside{
+            width: 50%;
+            text-align: left;
+            margin-left: 50px;
+        }
+
+            .skill_card{
+                background-color: #ffffff;
+                border-radius: 5px;
+                box-shadow: #573B85 3px 3px 25px;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 155px);
+                grid-gap: 15px;
+                width:700px;
+                height: 350px;
+                transition: all .5s;
+                filter: blur(3px);
+            }
+
+            .item{
+                padding: 35px;
+            }
+
+/* Animation skill card*/
+.skill_right{
     transform: perspective(800px) rotateX(10deg) rotateY(25deg) scale(0.9);
+    left: -20px;
 }
 
-.bg_skill:hover{
+.skill_right:hover{
     transform: perspective(800px) rotateX(10deg) rotateY(-15deg) translateY(-50px) scale(1);
     filter: blur(0);
     opacity: 1;
 }
 
-.item{
+.skill_left{
+    transform: perspective(800px) rotateX(10deg) rotateY(-15deg) scale(0.9);
+    right: -20px;
+}
+
+.skill_left:hover{
+    transform: perspective(800px) rotateX(10deg) rotateY(25deg) translateY(-50px) scale(1);
+    filter: blur(0);
+    opacity: 1;
 }
