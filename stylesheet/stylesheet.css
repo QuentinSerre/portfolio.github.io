@@ -393,26 +393,30 @@ main{
 #pro_exp{
     background-color: #3c285e;
     transform: rotate(5deg);
-    height: 1000px;
+
 }
 
-    #pro_exp h2{
-        top: 1.5vw;
-    }
-
-#exp{
-
+#experience{
+    border: 1px solid red;          /* TEMP */
     transform: rotate(-5deg);
+    
 }
 
+#exp_content{
+    display: flex;
+    align-items: center;
+}
+
+/* Experience card */
 .exp_card{
     background-color: #ffffff;
     border-radius: 10px;
     color: #000000;
     width: 500px;
+    height: 750px;
     padding: 50px;
     text-align: left;
-    margin: 100px 50px 100px 50px;
+    margin: 100px auto 0px auto;
 }
 
     .exp_card h3{
@@ -427,11 +431,16 @@ main{
         padding: 10px;
     }
 
+    .exp_card p{
+        margin-left: 10px;
+        text-align: justify;
+    }
+
     .exp_card li{
         list-style: circle;
         margin-left: 30px;
     }
 
-    .exp_card p{
-        margin-left: 10px;
-    }
+        .exp_card li ul li{
+            list-style: inside;
+        }
