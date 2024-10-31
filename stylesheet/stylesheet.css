@@ -20,6 +20,7 @@
 body{
     background-color: #1E1E1E;
     color: #ffffff;
+    font-size: 20px;
 }
 
 /* h1 for section */
@@ -83,7 +84,6 @@ nav{
             color: #ffffff;
             font-family: "Inter";
             text-decoration: none;
-            font-size: 20px;
             padding: 20px;
             display: block;
         }
@@ -121,16 +121,24 @@ main{
     height: 2000px;
 }
 
+    article{
+        text-align: center;
+    }
+
+    section{
+        padding: 0px 50px 100px 50px;
+    }
+
 /* Profile */
 /* Presentation */
 #presentation{
     height: 120vh;
-    background: linear-gradient(#1E1E1E 88%, #573B85 );
+    background: linear-gradient(#1E1E1E 88%, #3c285e );
 }
 
     #presentation img{
         height: 90vh;
-        left: 15vh;
+        right: 35vh;
         filter: drop-shadow(#2b1d44 3px 3px 30px);
     }
 
@@ -138,6 +146,7 @@ main{
         position: absolute;
         right: 20vh;
         top: 25vh;
+        text-align: left;
     }
 
         #description h1, #description h2{
@@ -147,7 +156,7 @@ main{
 
 /* Career path */
 #career_path{
-    background: linear-gradient(#573B85 88%, #1E1E1E);
+    background: linear-gradient(#3c285e 88%, #1E1E1E);
     padding: 450px 0px 520px 0px;
     text-align: center;
 }
@@ -303,11 +312,6 @@ main{
 
 
 /* Skills */
-#skill{
-    text-align: center;
-    margin: 50px 0px 50px 0px;
-}
-
 #skill h2{
     top: 1.5vw;
     margin-bottom: 200px;
@@ -338,7 +342,7 @@ main{
         aside{
             width: 50%;
             text-align: left;
-            margin-left: 50px;
+            margin-left: 80px;
         }
 
             .skill_card{
@@ -384,3 +388,50 @@ main{
     filter: blur(0);
     opacity: 1;
 }
+
+/* Professionnal Experience */
+#pro_exp{
+    background-color: #3c285e;
+    transform: rotate(5deg);
+    height: 1000px;
+}
+
+    #pro_exp h2{
+        top: 1.5vw;
+    }
+
+#exp{
+
+    transform: rotate(-5deg);
+}
+
+.exp_card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #000000;
+    width: 500px;
+    padding: 50px;
+    text-align: left;
+    margin: 100px 50px 100px 50px;
+}
+
+    .exp_card h3{
+        font-weight: bold;
+        font-size: 24px;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    .exp_card h4{
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    .exp_card li{
+        list-style: circle;
+        margin-left: 30px;
+    }
+
+    .exp_card p{
+        margin-left: 10px;
+    }
