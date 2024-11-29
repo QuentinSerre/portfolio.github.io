@@ -21,6 +21,7 @@ body{
     background-color: #1E1E1E;
     color: #ffffff;
     font-size: 20px;
+    overflow-x: hidden;
 }
 
 /* h1 for section */
@@ -446,7 +447,7 @@ main{
 /* Back */
 .exp_card_back{
     z-index: 0;
-
+    overflow: hidden;
     transform: rotateY(180deg);
 }
 
@@ -487,3 +488,80 @@ main{
 }
 
 /* Production */
+#production{
+    border: 1px solid #1E1E1E;
+}
+
+    .production_container a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+.btn{
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 2px;
+    transition: all .3s;
+}
+
+.btn:hover{
+    opacity: .6;
+}
+
+.production_card{
+    background: linear-gradient(.3turn, #835dc1, #3c285e);
+    border-radius: 15px;
+    width: 800px;
+    height: 300px;
+    margin: 150px;
+    transition: all .3s;
+}
+
+    .production_card img{
+        height: 350px;
+        width: 580px;
+        border-radius: 5px;
+        transform: perspective(800px) rotateY(-20deg);
+        left: 350px;
+        top: -25px;
+        filter: drop-shadow(3px 3px 10px #3c285e);
+    }
+
+    .production_card .description{
+        width: 420px;
+        height: 260px;
+        margin-left: 40px;
+        top: -335px;
+        text-align: left;
+    }
+
+        .description h3{
+            font-weight: 800;
+            font-size: 35px;
+        }
+
+        .description ul{
+            margin: 35px 0 35px 30px;
+        }
+
+            .description li{
+                font-size: 23px;
+                margin: 5px 0 5px 0;
+                list-style: inside;
+            }
+
+        .description h4{
+            font-size: 30px;
+            font-weight: 600;
+            transition: all .3s;
+            width: 50px;
+        }
+
+.production_card:hover{
+    transform: translateY(-10px);
+}
+
+    .description h4:hover{
+        scale: 1.3;
+    }
