@@ -309,8 +309,98 @@ main{
         /* Bts card */
         .bts_card{
             top: 120px;
+            cursor: pointer;
         }
 
+            /* Touch Icon */
+            #touch_icon{
+                opacity: 0;
+                width: 64px;
+                right: 210px;
+                top: 15px;
+                animation: touch 4s infinite;
+            }
+
+            @keyframes touch {
+                0%{opacity: 0;}
+                15%{opacity: 0.3;}
+                30%{opacity: 0;}
+                45%{opacity: 0.3;}
+                60%{opacity: 0;}
+            }
+
+/* Modal Bts */
+.overlay{
+    z-index: 100;
+    position: fixed;
+    inset: 0;
+    margin: auto;
+    background-color: #00000075;
+    transform: 2s all;
+    display: none;
+}
+
+    .overlay div{
+        padding: 20px;
+    }
+
+    .modal{
+        background-color: #ffffff;
+        color: #0E0E0E;
+        padding: 15px;
+        border-radius: 20px;
+        width: 1000px;
+        height: 500px;
+        position: fixed;
+        inset: 0;
+        margin: auto;
+    }
+
+        .modal img{
+            position: absolute;
+            right: 20px;
+            width: 24px;
+            cursor: pointer;
+        }
+
+        .modal h3{
+            font-weight: bold;
+            margin: 15px;
+        }
+
+        #option{
+            display: flex;
+        }
+
+            #left_modal ul, #right_modal ul{
+                text-align: left;
+            }
+
+                #option h4{
+                    font-weight: 500;
+                }
+
+                #option li{
+                    margin-top: 10px;
+                    list-style: inside;
+                }
+
+.show-modal{
+    opacity: 1;
+    display: block;
+    animation: AnimModal 0.3s;
+}
+
+.hide-modal{
+    opacity: 0;
+    display: none;
+    animation: AnimModal reverse 0.3s;
+}
+
+@keyframes AnimModal {
+    0%{opacity: 0; transform: scale(0);}
+    100%{opacity: 1; transform: scale(1);}
+}
 
 /* Skills */
 #skill h2{

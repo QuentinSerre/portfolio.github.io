@@ -117,7 +117,9 @@
                         <!-- Vertical line -->
                         <div class="vertical_line abs_elm_centered"></div>
                         <!-- Card -->
-                        <div class="card bts_card abs_elm_centered">
+                        <div class="card bts_card abs_elm_centered" onclick="openModal()">
+                            <!-- Touch icon -->
+                        <img src="asset/icon/icons8-touch-50.png" id="touch_icon" alt="touch_icon">
                             <img src="asset/icon/icons8-greffier-94.png" alt="graduateIcon">
                             <h3>BTS SIO</h3>
                             <ul>
@@ -128,6 +130,35 @@
                     </div>
                     <!-- End -->
                     <div class="circle end_point"></div>
+                </div>
+                <!-- BTS Modal -->
+                <div class="overlay">
+                    <div class="modal">
+                        <img src="asset/icon/icons8-croix-48.png" alt="btnCloseModal" onclick="closeModal()">
+                        <h3>🎓 BTS SIO (Services Informatiques aux Organisations)</h3>
+                        <p>Le BTS SIO est une formation de 2 ans après le bac qui prépare aux métiers de l'informatique. Il forme des techniciens capables de concevoir, développer et maintenir des systèmes informatiques et des réseaux.
+                        <h3>🛠️ Deux options au choix : SLAM et SISR</h3>
+                        <div id="option">
+                            <div id="left_modal">
+                                <h4>SLAM (Solutions Logicielles et Applications Métiers)</h4>
+                                <br>
+                                <ul>
+                                    <li>Objectif : Concevoir et développer des applications logicielles (web, mobiles ou bureautiques).</li>
+                                    <li>Compétences : Programmation (Python, Java, PHP, SQL), création de bases de données, maintenance d'applications.</li>
+                                    <li>Débouchés : Développeur d'applications, analyste-programmeur, testeur d'applications.</li>
+                                </ul>
+                            </div>
+                            <div id="right_modal">
+                                <h4>SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</h4>
+                                <br>
+                                <ul>
+                                    <li>Objectif : Installer, configurer et administrer des réseaux et systèmes informatiques.</li>
+                                    <li>Compétences : Administration des serveurs (Linux, Windows), cybersécurité, virtualisation, dépannage des infrastructures.</li>
+                                    <li>Débouchés : Administrateur réseaux, technicien support, spécialiste cybersécurité.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- Skills -->
@@ -312,7 +343,7 @@
             <section class="production_container">
                 <!-- Production card -->
                 <!-- Morpho -->
-                <div class="production_card">
+                <div class="production_card  no_prof">
                     <img src="asset/image/morpho.png" alt="imageConvertisseurMorpho">
                     <div class="description">
                         <h3>Morpho</h3>
@@ -321,11 +352,11 @@
                             <li>Convertisseur audio format AAC</li>
                             <li>Techno utilisées : HTML, CSS, JS, FFMPEG</li>
                         </ul>
-                        <a target="_blank" href="#"><h4>Voir</h4></a>
+                        <a target="_blank" href="html/production_morpho.html"><h4>Voir</h4></a>
                     </div>
                 </div>
                 <!-- OID -->
-                <div class="production_card">
+                <div class="production_card no_prof">
                     <img src="asset/image/oid.png" alt="ImageAppelOffre">
                     <div class="description">
                         <h3>Appel d'offre OID</h3>
@@ -334,11 +365,11 @@
                             <li></li>
                             <li></li>
                         </ul>
-                        <a target="_blank" href="#"><h4>Voir</h4></a>
+                        <a target="_blank" href="html/production_oid.html"><h4>Voir</h4></a>
                     </div>
                 </div>
                 <!-- Internship mission 1 -->
-                <div class="production_card">
+                <div class="production_card prof">
                     <img src="asset/image/stage_mission_1.png" alt="imageStageMission1">
                     <div class="description">
                         <h3>Lanceur d'application métier</h3>
@@ -347,11 +378,11 @@
                             <li>Mission de stage</li>
                             <li>Techno utilisées : HTML, CSS, JS, PHP</li>
                         </ul>
-                        <a target="_blank" href="#"><h4>Voir</h4></a>
+                        <a target="_blank" href="html/production_mission1.html"><h4>Voir</h4></a>
                     </div>
                 </div>
                 <!-- Internship mission 2 -->
-                <div class="production_card">
+                <div class="production_card prof">
                     <img src="asset/image/stage_mission_2.png" alt="imageStageMission2">
                     <div class="description">
                         <h3>Page application métier</h3>
@@ -360,11 +391,11 @@
                             <li>Mission de stage</li>
                             <li>Techno utilisées : HTML, CSS, JS, PHP</li>
                         </ul>
-                        <a target="_blank" href="#"><h4>Voir</h4></a>
+                        <a target="_blank" href="html/production_mission2.html"><h4>Voir</h4></a>
                     </div>
                 </div>
                 <!-- Internship mission 3 -->
-                <div class="production_card">
+                <div class="production_card prof">
                     <img src="asset/image/stage_mission_2.png" alt="imageStageMission2">
                     <div class="description">
                         <h3>Importation module Intranet</h3>
@@ -373,7 +404,7 @@
                             <li>Mission de stage</li>
                             <li>Techno : WordPress, WooCommerce</li>
                         </ul>
-                        <a target="_blank" href="#"><h4>Voir</h4></a>
+                        <a target="_blank" href="html/production_mission3.html"><h4>Voir</h4></a>
                     </div>
                 </div>
             </section>
