@@ -118,17 +118,13 @@ li a:hover{
 
 
 /* MAIN */
-main{
-    height: 2000px;
+article{
+    text-align: center;
 }
 
-    article{
-        text-align: center;
-    }
-
-    section{
-        padding: 0px 50px 100px 50px;
-    }
+section{
+    padding: 0px 50px 100px 50px;
+}
 
 /* Profile */
 /* Presentation */
@@ -656,18 +652,82 @@ main{
         scale: 1.3;
     }
 
-/* Contact */
 
+/* FOOTER */
+footer{
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Contact */
+#contact *:not(a){
+    margin:30px;
+}
+
+    #contact a{
+        color: #ffffff;
+    }
+
+    #contact img{
+        width: 48px;
+        margin-top: 180px;
+    }
+
+    #cv_icon:hover{
+        animation: leftRight .5s;
+    }
+
+    @keyframes leftRight{
+        0%   {transform: rotate(0deg);}
+        25%  {transform: rotate(15deg);}
+        50%  {transform: rotate(-15deg);}
+        75%  {transform: rotate(15deg);}
+        100% {transform: rotate(0deg);}
+    }
+
+    #mail_icon{
+        transition: .5s;
+        transform: scale(1, 1);
+    }
+    
+    #mail_icon:hover{
+        transition: .5s;
+        transform: scale(-1, 1);
+    }
+
+    #linkedin_icon:hover{
+        animation: boing .5s;
+    }
+
+    @keyframes boing{
+        0%  {transform: scale(1, .8);}
+        50%  {transform: translate(0px, -8px);}
+        100% {transform: translate(0px, 0px);}
+    }
+
+    #github_icon{
+        transition: .5s;
+        transform: rotate(0deg);
+    }
+    
+    #github_icon:hover{
+        transition: .5s;
+        transform: rotate(360deg);
+    }
+
+
+/* Background wave */
 #ocean{
+    position: absolute;
     width: 100%;
 }
     #waves{
-        height: 600px;
+        height: 400px;
     }
 
         .wave{
             background: url('../asset/image/wave.png');
-            background-size: 100% 600px;
+            background-size: 100% 400px;
             position: absolute;
             width: 100%;
             height: 100%;
