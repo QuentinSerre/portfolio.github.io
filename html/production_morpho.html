@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morpho</title>
+    <link rel="shortcut icon" href="../asset/icon/icons8-identity-24.png" type="image/x-icon">
+    <!-- Link sylesheet -->
+    <link rel="stylesheet" href="../stylesheet/stylesheet.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Import Dosis font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Import Hammersmith One font-->
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <!-- Import Inter font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- Open icon menu -->
+        <img src="../asset/icon/icons8-menu-96.png" alt="openMenuIcon" onclick="openCloseNav()">
+    </header>
+    <!-- Navigation menu -->
+    <nav id="nav_menu">
+        <!-- Close menu icon -->
+        <img src="../asset/icon/icons8-cross-96.png" alt="openMenuIcon" onclick="openCloseNav()">
+        <ul>
+            <!-- Profile -->
+            <li id="has_sub_menu"><a href="../index.html#profile">Profil</a>
+                <!-- Sub menu -->
+                <ul id="sub_menu">
+                    <li><a href="../index.html#profile">Présentation</a></li>
+                    <li><a href="../index.html#career_path">Parcours</a></li>
+                    <li><a href="../index.html#skill">Compétences</a></li>
+                </ul>
+            </li>
+            <!-- Professional Experience -->
+            <li><a href="../index.html#pro_exp">Expériences Professionelles</a></li>
+            <!-- Project -->
+            <li><a href="../index.html#production">Réalisations</a></li>
+            <!-- Technological watch -->
+            <li><a href="technological.html">Veille Technologique</a></li>
+            <!-- Contact -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <main>
+
+    </main>
+    <footer>
+        <!-- Background wave animation -->
+        <div id="ocean">
+            <div id="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+                <div class="wave" id="wave5"></div>
+            </div>
+        </div>
+        <!-- Contact -->
+        <article id="contact">
+            <div id="logo-grid">
+                <a href="../file/cv_serre_quentin.pdf" download="cv_quentin_serre.pdf"><img src="../asset/icon/icons8-cv-100.png" alt="cvIcon" id="cv_icon"></a>
+                <a href="mailto:quentin.serre@orange.fr"><img src="../asset/icon/icons8-mail-96.png" alt="mailIcon" id="mail_icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/quentin-serre-4153b4241/"><img src="../asset/icon/icons8-linkedin-100.png" alt="linkedinIcon" id="linkedin_icon"></a>
+                <a target="_blank" href="https://github.com/QuentinSerre"><img src="../asset/icon/icons8-github-64.png" alt="githubIcon" id="github_icon"></a>
+            </div>
+            <h5>Icons by <a href="https://icons8.com">Icons8</a></h5>
+            <h4>© Quentin Serre | All right reserved</h4>
+        </article>
+    </footer>
+</body>
+<!-- Link scripsheet -->
+<script src="../js/script.js"></script>
+
+</html>

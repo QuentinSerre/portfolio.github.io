@@ -18,6 +18,7 @@
 }
 
 body{
+    /* background-color: #0F172A; */
     background-color: #1E1E1E;
     color: #ffffff;
     font-size: 20px;
@@ -54,6 +55,10 @@ header img, nav img{
     cursor: pointer;
     opacity: .5;
     transition: ease-in-out .3s;
+}
+
+header img{
+    left: 15px;
 }
 
 nav img:hover, header img:hover{
@@ -118,6 +123,10 @@ li a:hover{
 
 
 /* MAIN */
+main{
+    min-height: 100vh;
+}
+
 article{
     text-align: center;
 }
@@ -377,8 +386,9 @@ section{
                 }
 
                 #option li{
-                    margin-top: 10px;
+                    margin: 10px 0 0 35px;
                     list-style: inside;
+                    list-style-position: outside;
                 }
 
 .show-modal{
@@ -678,6 +688,8 @@ footer{
     #contact img{
         width: 48px;
         margin-top: 180px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     #cv_icon:hover{
@@ -774,3 +786,46 @@ footer{
     0%{background-position-x: 0;}
     100%{background-position-x: 100vw;}
 }
+
+/* Technological */
+#description_tech, #article_container{
+    text-align: justify;
+    width: 1000px;
+    margin: 0px auto 0px auto;
+}
+
+    #description_tech h1{
+        font-size: 48px;
+        text-align: center;
+        padding: 30px;
+    }
+
+    #description_tech h2{
+        font-size: 24px;
+    }
+
+    .description_container{
+        background-color: #3c285e;
+        box-shadow: #65439c 0px 0px 5px 0px, #65439c 0px 0px 1px 0px;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 15px;
+    }
+
+        .description_container h2{
+            margin: 5px;
+        }
+
+        #description_part{
+            display: flex;
+        }
+
+                #description_left, #description_right{
+                    width: 500px;
+                }
+
+                #description_left li, #description_right li{
+                    list-style: inside;
+                    list-style-position: outside;
+                    margin-left: 75px;
+                }
