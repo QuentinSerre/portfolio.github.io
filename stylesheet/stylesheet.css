@@ -40,6 +40,11 @@ h2{
     font-size: 6vh;
 }
 
+a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
 
 /* HEADER */
 header img{
@@ -87,9 +92,7 @@ nav{
     }
 
         li a{
-            color: #ffffff;
             font-family: "Inter";
-            text-decoration: none;
             padding: 20px;
             display: block;
         }
@@ -701,8 +704,9 @@ footer{
     margin:30px;
 }
 
-    #contact a{
-        color: #ffffff;
+    h5 a{
+        font-weight: bold;
+        text-decoration: underline;
     }
 
     #contact img{
@@ -849,3 +853,48 @@ footer{
                     list-style-position: outside;
                     margin-left: 75px;
                 }
+    
+    #article_container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 380px);
+        grid-gap: 30px;
+        justify-content: center;
+        padding: 20px 0px 50px 0px;
+        max-width: 1200px;
+        width: 100%;
+        margin-bottom: 180px;
+    }
+
+        #vignette_tech{
+            background-color: #65439c;
+            border-radius: 5px;
+            box-shadow: #6363634d 0px 1px 2px 0px, #6363634d 0px 3px 8px 0px;
+            height: 230px;
+            width: 380px;
+            overflow: hidden;
+            transition: .3s ease-in-out;
+            text-align: center;
+        }
+
+            #vignette_tech img{
+                border-radius: 4px 4px 0px 0px;
+                height: 100%;
+                width: 100%;
+                transition: .3s ease-in-out;
+            }
+
+            #vignette_tech p{
+                margin: 4px 0 0 0;
+            }
+        
+        #vignette_tech:hover{
+            box-shadow: #00000066 0px 2px 4px, #0000004d 0px 7px 13px -3px, #00000033 0px -3px 0px inset;
+            transform: translateY(-5px);
+        }
+
+        #vignette_tech:hover img{
+            height: 80%;
+        }
+        
+        
+        
