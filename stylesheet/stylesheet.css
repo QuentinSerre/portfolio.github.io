@@ -904,3 +904,98 @@ footer{
         #vignette_tech:hover img{
             height: 80%;
         }
+
+input[type="submit"], #btn{
+    background: none;
+    border: none;
+}
+
+#btn{
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    right: 15px;
+    z-index: 100;
+}
+
+#btn:hover{
+    background-color: #ffffff;
+}
+
+#question{
+    display: none;
+    padding: 10px;
+}
+
+#answer{
+    color: #000000;
+    text-align: left;
+    padding: 3px;
+    margin-top: 10px;
+}
+
+#container_e{
+    display: none;
+    position: sticky;
+    height: 380px;
+    background-color: #ffffff;
+}
+
+#copyrighting{
+    position: absolute;
+    font-family: "Press Start 2P";
+    height: 380px;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    animation: multicolor 5s infinite;
+    margin: 0 50% 0 50%;
+    z-index: 1;
+}
+
+@keyframes multicolor {
+    0%{color: #ff0000;}
+    14.5%{color: #ffa500;}
+    29%{color: #ffff00;}
+    43.5%{color: #00ff00;}
+    58%{color: #0000ff;}
+    72.5%{color: #4b0082;}
+    87%{color: #ee82ee;}
+    100%{color: #ff0000;}
+}
+
+#border_up_left, #border_up_right, #border_down, #pixel{
+    position: absolute;
+    background-color: #9460c2;
+}
+
+#border_up_left{
+    height: 50px;
+    width: 45%;
+}
+
+#border_up_right{
+    height: 50px;
+    width: 43%;
+    right: 0;
+}
+
+#border_down{
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+}
+
+#pixel{
+    height: 20px;
+    width: 20px;
+    left: -20px;
+    top: 100px;
+    z-index: 1000;
+    animation: moove infinite 8s ease-in-out;
+}
+
+@keyframes moove {
+    40%{transform: translateX(500px);}
+    65%{transform: translateX(500px);}
+    100%{transform: translateX(-20px);}
+}

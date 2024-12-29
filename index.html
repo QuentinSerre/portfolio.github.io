@@ -20,12 +20,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <!-- Import Press Start 2P font -->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <!-- Open icon menu -->
         <img src="asset/icon/icons8-menu-96.png" alt="openMenuIcon" onclick="openCloseNav()">
+        <button id="btn" onclick="openFilter()"></button>
     </header>
     <!-- Navigation menu -->
     <nav id="nav_menu">
@@ -442,6 +445,18 @@
             <h5>Icons by <a href="https://icons8.com">Icons8</a></h5>
             <h4>© Quentin Serre | All right reserved</h4>
         </article>
+        <div id="question">
+            <p>Je suis le tout premier jeu à avoir utiliser ce terme.</p>
+            <input type="text" id="answer" name="answer" value="" >
+            <input type="submit" value="&#9989;" onclick="send()">
+        </div>
+        <div id="container_e">
+            <div id="border_up_left"></div>
+            <div id="border_up_right"></div>
+            <div id="pixel"></div>
+            <div id='copyrighting'>Created Quentin. . by . . . . Serre</div>
+            <div id="border_down"></div>
+        </div>
     </footer>
 </body>
 <!-- Link scripsheet -->
