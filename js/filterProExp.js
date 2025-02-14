@@ -1,32 +1,3 @@
-// Open, close navigation menu
-function openCloseNav(){
-
-    var menu = document.getElementById("nav_menu");
-
-    // navigation menu is closed
-    if (menu.style.transform == 'translateX(0%)' | menu.style.transform == ""){
-        // Open navigation menu
-        menu.style.transform = 'translateX(100%)';
-    } else {
-        // Close navigation menu
-        menu.style.transform = 'translateX(0%)';
-    }
-}
-
-// Open modal
-const modal = document.querySelector(".overlay");
-
-function openModal(){
-  modal.classList.remove("hide-modal");
-  modal.classList.add("show-modal");
-}
-// Close modal
-function closeModal(){
-  modal.classList.remove("show-modal");
-  modal.classList.add("hide-modal");
-}
-
-
 // Filter pro_exp
 filterSelection("all")
 function filterSelection(c)
