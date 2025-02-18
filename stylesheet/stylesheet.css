@@ -21,7 +21,6 @@ body{
     background-color: #1E1E1E;
     color: #ffffff;
     font-size: 20px;
-    overflow-x: hidden;
 }
 
 /* h1 for section */
@@ -127,6 +126,7 @@ li a:hover{
 /* MAIN */
 main{
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 article{
@@ -145,9 +145,10 @@ section{
 }
 
     #presentation img{
-        height: 90vh;
+        height: 80vh;
         right: 35vh;
         filter: drop-shadow(#2b1d44 3px 3px 30px);
+        margin-top: 8vh;
     }
 
     #description{
@@ -917,34 +918,155 @@ input[type="submit"], #btn{
     background-color: #ffffff;
 }
 
-#question{
+.container_e{
     display: none;
-    padding: 10px;
-}
-
-#answer{
-    color: #000000;
-    text-align: left;
-    padding: 3px;
-    margin-top: 10px;
-}
-
-#container_e{
-    display: none;
-    position: sticky;
-    height: 380px;
-    background-color: #ffffff;
-}
-
-#copyrighting{
     position: absolute;
-    font-family: "Press Start 2P";
-    height: 380px;
-    text-orientation: upright;
-    writing-mode: vertical-lr;
-    animation: multicolor 5s infinite;
-    margin: 0 50% 0 50%;
-    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: -1;
+}
+
+    #container_e_first{
+        display: block;
+    }
+
+    #container_e_second{
+        left: 100vw;
+    }
+
+    .wall, #player{
+        position: absolute;
+        background-color: #9460c2;
+    }
+
+    .container_e *:not(#copyrighting){
+        height: 8vh;
+    }
+
+    #wall1{
+        width: 46%;
+    }
+
+    #wall2{
+        width: 42%;
+        right: 0;
+    }
+
+    #wall3{
+        width: 100%;
+        bottom: 0;
+    }
+
+    #wall4{
+        width: 4vw;
+        padding: 91vh 0 0 0;
+        right: 0;
+    }
+
+    #wall5{
+        width: 4vw;
+        padding: 60vh 0 0 0;
+        bottom: 0;
+        left: 50vw;
+    }
+
+    #wall6{
+        width: 50vw;
+        top: 25vh;
+        left: 30vw;
+        
+    }
+
+    #wall7{
+        width: 4vw;
+        padding: 52vh 0 0 0;
+        right: 10vw;
+        bottom: 15vh;
+    }
+
+    #wall8{
+        width: 30vw;
+        right: 10vw;
+        bottom: 50vh;
+    }
+
+    #wall9{
+        width: 4vw;
+        padding: 30vh 0 0 0;
+        bottom: 0;
+        right: 22vw;
+    }
+
+    #wall10{
+        width: 18vw;
+        bottom: 20vh;
+        right:31vw;
+    }
+
+    #wall11{
+        width: 4vw;
+        padding: 50vh 0 0 0;
+    }
+
+    #wall12{
+        width: 4vw;
+        padding: 45vh 0 0 0;
+        bottom: 0;
+        left: 20vw;
+    }
+
+    #wall13{
+        width: 35vw;
+        bottom: 20vh;
+        left: 8vw;
+    }
+
+    #wall14{
+        width: 4vw;
+        left: 15vw;
+        padding: 25vh 0 0 0;
+    }
+
+    #wall15{
+        width: 15vw;
+        bottom: 45vh;
+        left:30vw;
+    }
+
+    #copyrighting{
+        position: absolute;
+        font-family: "Press Start 2P";
+        font-size: 5.5vh;
+        height: 100vh;
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        animation: multicolor 5s infinite;
+        margin: 0 50% 0 50%;
+        z-index: 1;
+    }
+
+#hidden{
+    width: 0;
+    height: 0;
+    outline: none;
+    position: absolute;
+    top: -20px;
+}
+
+#player{
+    height: 20px;
+    width: 20px;
+    z-index: 5000;
+    display: none;
+    top: var(--top);
+    left: var(--left);
+}
+
+#key{
+    width: 56px;
+    height: 56px;
+    position: absolute;
 }
 
 @keyframes multicolor {
@@ -956,41 +1078,4 @@ input[type="submit"], #btn{
     72.5%{color: #4b0082;}
     87%{color: #ee82ee;}
     100%{color: #ff0000;}
-}
-
-#border_up_left, #border_up_right, #border_down, #pixel{
-    position: absolute;
-    background-color: #9460c2;
-}
-
-#border_up_left{
-    height: 50px;
-    width: 45%;
-}
-
-#border_up_right{
-    height: 50px;
-    width: 43%;
-    right: 0;
-}
-
-#border_down{
-    height: 50px;
-    width: 100%;
-    bottom: 0;
-}
-
-#pixel{
-    height: 20px;
-    width: 20px;
-    left: -20px;
-    top: 100px;
-    z-index: 1000;
-    animation: moove infinite 8s ease-in-out;
-}
-
-@keyframes moove {
-    40%{transform: translateX(500px);}
-    65%{transform: translateX(500px);}
-    100%{transform: translateX(-20px);}
 }

@@ -28,7 +28,6 @@
     <header>
         <!-- Open icon menu -->
         <img src="asset/icon/icons8-menu-96.png" alt="openMenuIcon" onclick="openCloseNav()">
-        <button id="btn" onclick="openFilter()"></button>
     </header>
     <!-- Navigation menu -->
     <nav id="nav_menu">
@@ -54,7 +53,14 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
+    <div id="player"></div>
+    <input type="text" id="hidden" name="ee" autofocus>
+    <div class="container_e" id="container_e_second">
+        <div class="wall wall_up_left" id="wall"></div>
+        <div class="wall wall_up_right" id="wall"></div>
+        <div  id='copyrighting'>Created Quentin. . by . . . . Serre</div>
+        <div class="wall wall_down" id="wall"></div>
+    </div>
     <!-- Content -->
     <main>
         <!-- Profile -->
@@ -427,6 +433,7 @@
         <!-- Background wave animation -->
         <div id="ocean">
             <div id="waves">
+                <img id="key" src="asset/icon/key.png" alt="cle qui sert a trouver un pixel cache">
                 <div class="wave" id="wave1"></div>
                 <div class="wave" id="wave2"></div>
                 <div class="wave" id="wave3"></div>
@@ -445,17 +452,22 @@
             <h5>Icons by <a href="https://icons8.com">Icons8</a></h5>
             <h4>© Quentin Serre | All right reserved</h4>
         </article>
-        <div id="question">
-            <p>Je suis le tout premier jeu à avoir utiliser ce terme.</p>
-            <input type="text" id="answer" name="answer" value="" >
-            <input type="submit" value="&#9989;" onclick="send()">
-        </div>
-        <div id="container_e">
-            <div id="border_up_left"></div>
-            <div id="border_up_right"></div>
-            <div id="pixel"></div>
-            <div id='copyrighting'>Created Quentin. . by . . . . Serre</div>
-            <div id="border_down"></div>
+        <div class="container_e" id="container_e_first">
+            <div class="wall" id="wall1"></div>
+            <div class="wall" id="wall2"></div>
+            <div class="wall" id="wall3"></div>
+            <div class="wall" id="wall4"></div>
+            <div class="wall" id="wall5"></div>
+            <div class="wall" id="wall6"></div>
+            <div class="wall" id="wall7"></div>
+            <div class="wall" id="wall8"></div>
+            <div class="wall" id="wall9"></div>
+            <div class="wall" id="wall10"></div>
+            <div class="wall" id="wall11"></div>
+            <div class="wall" id="wall12"></div>
+            <div class="wall" id="wall13"></div>
+            <div class="wall" id="wall14"></div>
+            <div class="wall" id="wall15"></div>
         </div>
     </footer>
 </body>
@@ -463,5 +475,6 @@
 <script src="js/nav.js"></script>
 <script src="js/modal.js"></script>
 <script src="js/filterProExp.js"></script>
+<script src="js/ee.js"></script>
 
 </html>
