@@ -29,7 +29,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <!-- Import Press Start 2P font -->
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -66,7 +67,7 @@
     <div class="container_e" id="container_e_second">
         <div class="wall wall_up_left" id="wall"></div>
         <div class="wall wall_up_right" id="wall"></div>
-        <div  id='copyrighting'>Created Quentin. . by . . . . Serre</div>
+        <div id='copyrighting'>Created Quentin. . by . . . . Serre</div>
         <div class="wall wall_down" id="wall"></div>
     </div>
     <!-- Content -->
@@ -89,10 +90,14 @@
                 <div class="career_line">
                     <!-- Start -->
                     <div class="circle start_point"></div>
+                    <!-- End -->
+                    <div class="circle end_point"></div>
+                </div>
+                <div class="career_step">
                     <!-- Bac -->
                     <div class="bac ">
                         <!-- Date -->
-                        <p class="date date_up">2021-2022</p>
+                        <p class="date date_up date_bac">2021-2022</p>
                         <!-- Career point -->
                         <div class="circle career_point abs_elm_centered"></div>
                         <!-- Vertical line -->
@@ -111,7 +116,7 @@
                     <!-- Licence -->
                     <div class="licence">
                         <!-- Date -->
-                        <p class="date date_down">2022-2023</p>
+                        <p class="date date_down date_licence">2022-2023</p>
                         <!-- Career point -->
                         <div class="circle career_point abs_elm_centered"></div>
                         <!-- Vertical line -->
@@ -128,7 +133,7 @@
                     <!-- BTS -->
                     <div class="bts">
                         <!-- Date -->
-                        <p class="date date_up">2023-2025</p>
+                        <p class="date date_up date_bts">2023-2025</p>
                         <!-- Career point -->
                         <div class="circle career_point abs_elm_centered"></div>
                         <!-- Vertical line -->
@@ -136,7 +141,7 @@
                         <!-- Card -->
                         <div class="card bts_card abs_elm_centered" onclick="openModal()">
                             <!-- Touch icon -->
-                        <img src="asset/icon/icons8-touch-50.png" id="touch_icon" alt="touch_icon">
+                            <img src="asset/icon/icons8-touch-50.png" id="touch_icon" alt="touch_icon">
                             <img src="asset/icon/icons8-greffier-94.png" alt="graduateIcon">
                             <h3>BTS SIO</h3>
                             <ul>
@@ -145,33 +150,39 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- End -->
-                    <div class="circle end_point"></div>
                 </div>
                 <!-- BTS Modal -->
                 <div class="overlay">
                     <div class="modal">
                         <img src="asset/icon/icons8-croix-48.png" alt="btnCloseModal" onclick="closeModal()">
                         <h3>🎓 BTS SIO (Services Informatiques aux Organisations)</h3>
-                        <p>Le BTS SIO est une formation de 2 ans après le bac qui prépare aux métiers de l'informatique. Il forme des techniciens capables de concevoir, développer et maintenir des systèmes informatiques et des réseaux.
+                        <p>Le BTS SIO est une formation de 2 ans après le bac qui prépare aux métiers de l'informatique.
+                            Il forme des techniciens capables de concevoir, développer et maintenir des systèmes
+                            informatiques et des réseaux.
                         <h3>🛠️ Deux options au choix : SLAM et SISR</h3>
                         <div id="option">
                             <div id="left_modal">
                                 <h4>SLAM (Solutions Logicielles et Applications Métiers)</h4>
                                 <br>
                                 <ul>
-                                    <li>Objectif : Concevoir et développer des applications logicielles (web, mobiles ou bureautiques).</li>
-                                    <li>Compétences : Programmation (Python, C#, PHP, SQL), création de bases de données, maintenance d'applications.</li>
-                                    <li>Débouchés : Développeur d'applications, analyste-programmeur, testeur d'applications.</li>
+                                    <li>Objectif : Concevoir et développer des applications logicielles (web, mobiles ou
+                                        bureautiques).</li>
+                                    <li>Compétences : Programmation (Python, C#, PHP, SQL), création de bases de
+                                        données, maintenance d'applications.</li>
+                                    <li>Débouchés : Développeur d'applications, analyste-programmeur, testeur
+                                        d'applications.</li>
                                 </ul>
                             </div>
                             <div id="right_modal">
                                 <h4>SISR (Solutions d'Infrastructure, Systèmes et Réseaux)</h4>
                                 <br>
                                 <ul>
-                                    <li>Objectif : Installer, configurer et administrer des réseaux et systèmes informatiques.</li>
-                                    <li>Compétences : Administration des serveurs (Linux, Windows), cybersécurité, virtualisation, dépannage des infrastructures.</li>
-                                    <li>Débouchés : Administrateur réseaux, technicien support, spécialiste cybersécurité.</li>
+                                    <li>Objectif : Installer, configurer et administrer des réseaux et systèmes
+                                        informatiques.</li>
+                                    <li>Compétences : Administration des serveurs (Linux, Windows), cybersécurité,
+                                        virtualisation, dépannage des infrastructures.</li>
+                                    <li>Débouchés : Administrateur réseaux, technicien support, spécialiste
+                                        cybersécurité.</li>
                                 </ul>
                             </div>
                         </div>
@@ -236,7 +247,8 @@
                             <div class="item"><img src="asset/icon/icons8-windows-96.png" alt="windowsIcon"></div>
                             <div class="item"><img src="asset/icon/icons8-linux-96.png" alt="linuxIcon"></div>
                             <div class="item"><img src="asset/icon/icons8-photoshop-96.png" alt="photoshopIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-adobe-premiere-pro-96.png" alt="premiereproIcon"></div>
+                            <div class="item"><img src="asset/icon/icons8-adobe-premiere-pro-96.png"
+                                    alt="premiereproIcon"></div>
                         </div>
                     </aside>
                 </div>
@@ -251,48 +263,48 @@
                 <div id="exp_content">
                     <!-- Network technician -->
                     <div class="flip_card">
-                            <!-- Front card -->
-                            <div class="exp_card_front">
-                                <img src="asset/image/interrogation.png" alt="interrogationImage">
-                            </div>
-                            <!-- Back card -->
-                            <div class="exp_card_back">
-                                <h3>Technicien Réseau chez Ramsay santé</h3>
-                                <h4>Période</h4>
-                                <p>Juillet 2023 à Août 2023 (2 mois)</p>
-                                <h4>Description</h4>
-                                <p>Durant deux mois j'ai eu la chance de travailler avec le groupe hospitalier Ramsay
-                                    Santé.
-                                    J'ai été embauché en tant que technicien réseau de juillet à août 2023.</p>
-                                <h4>Missions</h4>
-                                <ul>
-                                    <li>Préparation des ordinateurs</li>
-                                    <li>Aide au personnel</li>
-                                    <li>Gestion de parc</li>
-                                    <li>Maintenance réseau</li>
-                                </ul>
-                                <h4>Bilan</h4>
-                                <ul>
-                                    <li>Outils utilisés :
-                                        <ul>
-                                            <li>Active Directory</li>
-                                            <li>Remote Control Viewer</li>
-                                            <li>Clé booté</li>
-                                        </ul>
-                                    </li>
-                                    <li>Compétences travaillées :
-                                        <ul>
-                                            <li>Aide au personnel</li>
-                                            <li>Travail d'équipe</li>
-                                        </ul>
-                                    </li>
-                                    <li>Difficultés rencontrées :
-                                        <ul>
-                                            <li>Aide au personnel</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
+                        <!-- Front card -->
+                        <div class="exp_card_front">
+                            <img src="asset/image/interrogation.png" alt="interrogationImage">
+                        </div>
+                        <!-- Back card -->
+                        <div class="exp_card_back">
+                            <h3>Technicien Réseau chez Ramsay santé</h3>
+                            <h4>Période</h4>
+                            <p>Juillet 2023 à Août 2023 (2 mois)</p>
+                            <h4>Description</h4>
+                            <p>Durant deux mois j'ai eu la chance de travailler avec le groupe hospitalier Ramsay
+                                Santé.
+                                J'ai été embauché en tant que technicien réseau de juillet à août 2023.</p>
+                            <h4>Missions</h4>
+                            <ul>
+                                <li>Préparation des ordinateurs</li>
+                                <li>Aide au personnel</li>
+                                <li>Gestion de parc</li>
+                                <li>Maintenance réseau</li>
+                            </ul>
+                            <h4>Bilan</h4>
+                            <ul>
+                                <li>Outils utilisés :
+                                    <ul>
+                                        <li>Active Directory</li>
+                                        <li>Remote Control Viewer</li>
+                                        <li>Clé booté</li>
+                                    </ul>
+                                </li>
+                                <li>Compétences travaillées :
+                                    <ul>
+                                        <li>Aide au personnel</li>
+                                        <li>Travail d'équipe</li>
+                                    </ul>
+                                </li>
+                                <li>Difficultés rencontrées :
+                                    <ul>
+                                        <li>Aide au personnel</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <!-- Internship Annonay -->
                     <div class="flip_card">
@@ -306,7 +318,7 @@
                             <h4>Période</h4>
                             <p>13 mai au 28 juin 2024 (7 semaines)</p>
                             <h4>Description</h4>
-                            <p>Durant ma première année de BTS, j'ai pu intégrer le service informatique d'une mairie. 
+                            <p>Durant ma première année de BTS, j'ai pu intégrer le service informatique d'une mairie.
                                 Pendant ce stage aucun développeur n'était présent, j'ai donc travaillé en grande
                                 partie en autonomie.</p>
                             <h4>Missions</h4>
@@ -452,10 +464,14 @@
         <!-- Contact -->
         <article id="contact">
             <div id="logo-grid">
-                <a href="file/cv_serre_quentin.pdf" download="cv_quentin_serre.pdf"><img src="asset/icon/icons8-cv-100.png" alt="cvIcon" id="cv_icon"></a>
-                <a href="mailto:quentin.serre@orange.fr"><img src="asset/icon/icons8-mail-96.png" alt="mailIcon" id="mail_icon"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/quentin-serre-4153b4241/"><img src="asset/icon/icons8-linkedin-100.png" alt="linkedinIcon" id="linkedin_icon"></a>
-                <a target="_blank" href="https://github.com/QuentinSerre"><img src="asset/icon/icons8-github-64.png" alt="githubIcon" id="github_icon"></a>
+                <a href="file/cv_serre_quentin.pdf" download="cv_quentin_serre.pdf"><img
+                        src="asset/icon/icons8-cv-100.png" alt="cvIcon" id="cv_icon"></a>
+                <a href="mailto:quentin.serre@orange.fr"><img src="asset/icon/icons8-mail-96.png" alt="mailIcon"
+                        id="mail_icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/quentin-serre-4153b4241/"><img
+                        src="asset/icon/icons8-linkedin-100.png" alt="linkedinIcon" id="linkedin_icon"></a>
+                <a target="_blank" href="https://github.com/QuentinSerre"><img src="asset/icon/icons8-github-64.png"
+                        alt="githubIcon" id="github_icon"></a>
             </div>
             <h5>Icons by <a href="https://icons8.com">Icons8</a></h5>
             <h4>© Quentin Serre | All right reserved</h4>

@@ -1,14 +1,62 @@
 @media only screen and (max-width: 500px){
+    /* Presentation */
     #presentation{
-        height: 140vh;
+        height: 120vh;
     }
-    #presentation img{
+        
+        #presentation img{
+            height: 50vh;
+            right: 12vw;
+        }
+
+        #description{
+            position: absolute;
+            left: 1%;
+            margin-top: 30vh;
+            width: 100%;
+        }
+    
+    /* Career path */
+    #career_path{
         height: 50vh;
-        right: 12vw;
     }
-    #description{
-        position: absolute;
-        left: 1%;
-        margin-top: 30vh;
-    }
+    
+        .circle, .vertical_line, .career_line{
+            display: none;
+        }
+        .bac .vertical_line{
+            display: block;
+            height: 600px;
+            margin-top: 150px;
+        }
+            .licence, .bac, .bts{
+                position: absolute;
+                inset: 0;
+                margin: auto;
+            }
+
+            .bac{
+                top: -400px;
+            }
+                .date_bac{
+                    top: 110px;
+                    right: 80px;
+                }
+            
+            .licence{
+                top: 340px;
+            }
+                .date_licence{
+                    top: -355px;
+                    right: 80px;
+                }
+            .bts{
+                top: 175px;
+            }
+                .date_bts{
+                    top: 110px;
+                    right: 80px;
+                }
 }
+
+
