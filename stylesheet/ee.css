@@ -1,0 +1,161 @@
+.container_e{
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: -1;
+}
+
+    #container_e_first{
+        display: none;
+    }
+
+    #container_e_second{
+        left: 100vw;
+    }
+
+    .wall, #player{
+        position: absolute;
+        background-color: #9460c2;
+    }
+
+    .container_e *:not(#copyrighting){
+        height: 8vh;
+    }
+
+    #wall1{
+        width: 46%;
+    }
+
+    #wall2{
+        width: 42%;
+        right: 0;
+    }
+
+    #wall3{
+        width: 100%;
+        bottom: 0;
+    }
+
+    #wall4{
+        width: 4vw;
+        padding: 91vh 0 0 0;
+        right: 0;
+    }
+
+    #wall5{
+        width: 4vw;
+        padding: 60vh 0 0 0;
+        bottom: 0;
+        left: 50vw;
+    }
+
+    #wall6{
+        width: 50vw;
+        top: 25vh;
+        left: 30vw;
+        
+    }
+
+    #wall7{
+        width: 4vw;
+        padding: 52vh 0 0 0;
+        right: 10vw;
+        bottom: 15vh;
+    }
+
+    #wall8{
+        width: 30vw;
+        right: 10vw;
+        bottom: 50vh;
+    }
+
+    #wall9{
+        width: 4vw;
+        padding: 30vh 0 0 0;
+        bottom: 0;
+        right: 22vw;
+    }
+
+    #wall10{
+        width: 18vw;
+        bottom: 20vh;
+        right:31vw;
+    }
+
+    #wall11{
+        width: 4vw;
+        padding: 50vh 0 0 0;
+    }
+
+    #wall12{
+        width: 4vw;
+        padding: 45vh 0 0 0;
+        bottom: 0;
+        left: 20vw;
+    }
+
+    #wall13{
+        width: 35vw;
+        bottom: 20vh;
+        left: 8vw;
+    }
+
+    #wall14{
+        width: 4vw;
+        left: 15vw;
+        padding: 25vh 0 0 0;
+    }
+
+    #wall15{
+        width: 15vw;
+        bottom: 45vh;
+        left:30vw;
+    }
+
+    #copyrighting{
+        position: absolute;
+        font-family: "Press Start 2P";
+        font-size: 5.5vh;
+        height: 100vh;
+        text-orientation: upright;
+        writing-mode: vertical-lr;
+        animation: multicolor 5s infinite;
+        margin: 0 50% 0 50%;
+        z-index: 1;
+    }
+
+#hidden{
+    width: 0;
+    height: 0;
+    outline: none;
+    position: absolute;
+    top: -20px;
+}
+
+#player{
+    height: 20px;
+    width: 20px;
+    z-index: 5000;
+    display: none;
+    top: var(--top);
+    left: var(--left);
+}
+
+#key{
+    width: 56px;
+    height: 56px;
+    position: absolute;
+}
+
+@keyframes multicolor {
+    0%{color: #ff0000;}
+    14.5%{color: #ffa500;}
+    29%{color: #ffff00;}
+    43.5%{color: #00ff00;}
+    58%{color: #0000ff;}
+    72.5%{color: #4b0082;}
+    87%{color: #ee82ee;}
+    100%{color: #ff0000;}
+}

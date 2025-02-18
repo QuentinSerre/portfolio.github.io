@@ -1,0 +1,25 @@
+/* Profile */
+/* Presentation */
+#presentation{
+    height: 120vh;
+    background: linear-gradient(#1E1E1E 88%, #3c285e );
+}
+
+    #presentation img{
+        height: 80vh;
+        right: 35vh;
+        filter: drop-shadow(#2b1d44 3px 3px 30px);
+        margin-top: 8vh;
+    }
+
+    #description{
+        position: absolute;
+        right: 20vh;
+        top: 25vh;
+        text-align: left;
+    }
+
+        #description h1, #description h2{
+            font-size: 8vh;
+            margin:8vh;
+        }
