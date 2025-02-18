@@ -11,6 +11,12 @@
         filter: drop-shadow(#2b1d44 3px 3px 30px);
         margin-top: 8vh;
     }
+    /* @media only screen and (max-width: 500px){
+        #presentation img{
+            height: 50vh;
+            right: 15%;
+        }
+    } */
 
     #description{
         position: absolute;

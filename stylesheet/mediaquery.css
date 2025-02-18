@@ -1,0 +1,14 @@
+@media only screen and (max-width: 500px){
+    #presentation{
+        height: 140vh;
+    }
+    #presentation img{
+        height: 50vh;
+        right: 12vw;
+    }
+    #description{
+        position: absolute;
+        left: 1%;
+        margin-top: 30vh;
+    }
+}

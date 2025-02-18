@@ -15,6 +15,22 @@
         left: 100vw;
     }
 
+    #key{
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        left: 47.7vw;
+    }
+
+    #player{
+        height: 20px;
+        width: 20px;
+        z-index: 5000;
+        display: none;
+        top: var(--top);
+        left: var(--left);
+    }
+
     .wall, #player{
         position: absolute;
         background-color: #9460c2;
@@ -132,21 +148,6 @@
     outline: none;
     position: absolute;
     top: -20px;
-}
-
-#player{
-    height: 20px;
-    width: 20px;
-    z-index: 5000;
-    display: none;
-    top: var(--top);
-    left: var(--left);
-}
-
-#key{
-    width: 56px;
-    height: 56px;
-    position: absolute;
 }
 
 @keyframes multicolor {
