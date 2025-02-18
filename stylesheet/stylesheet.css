@@ -928,7 +928,7 @@ input[type="submit"], #btn{
 }
 
     #container_e_first{
-        display: block;
+        display: none;
     }
 
     #container_e_second{

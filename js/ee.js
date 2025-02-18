@@ -52,17 +52,17 @@ function checkInput(occ){
                     player.style.setProperty("--top", positionX +"px");
 
                     if ((keyCollision() || wallCollision1() || wallCollision2() || wallCollision3() || wallCollision4() || wallCollision5() || wallCollision6() || wallCollision7() || wallCollision8() || wallCollision9() || wallCollision10() || wallCollision11() || wallCollision12() || wallCollision13() || wallCollision14() || wallCollision15()) === true){
-                        positionX -= velocity*2;
+                        positionX -= velocity;
                     }
                 }
 
                 // Move player at left
                 else if(e.code === 'ArrowLeft' || e.code === 37){
-                    positionY -= velocity*2;
+                    positionY -= velocity;
                     player.style.setProperty("--left", positionY +"px");
 
                     if ((keyCollision() || wallCollision1() || wallCollision2() || wallCollision3() || wallCollision4() || wallCollision5() || wallCollision6() || wallCollision7() || wallCollision8() || wallCollision9() || wallCollision10() || wallCollision11() || wallCollision12() || wallCollision13() || wallCollision14() || wallCollision15()) === true){
-                        positionY += velocity*2;
+                        positionY += velocity;
                     }
                 }
                 // Move player at right
@@ -71,7 +71,7 @@ function checkInput(occ){
                     player.style.setProperty("--left", positionY +"px");
 
                     if ((keyCollision() || wallCollision1() || wallCollision2() || wallCollision3() || wallCollision4() || wallCollision5() || wallCollision6() || wallCollision7() || wallCollision8() || wallCollision9() || wallCollision10() || wallCollision11() || wallCollision12() || wallCollision13() || wallCollision14() || wallCollision15()) === true){
-                        positionY -= velocity*2;
+                        positionY -= velocity;
                     }
                 }
 
