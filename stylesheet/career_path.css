@@ -192,11 +192,16 @@
         color: #0E0E0E;
         padding: 15px;
         border-radius: 20px;
-        width: 1000px;
-        height: 500px;
+        width: 68vw;
+        height: 70vh;
         position: fixed;
         inset: 0;
         margin: auto;
+        overflow: scroll;
+    }
+
+    .modal::-webkit-scrollbar {
+        display: none;
     }
 
         .modal img{

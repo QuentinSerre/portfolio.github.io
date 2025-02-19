@@ -57,6 +57,12 @@
                     top: 110px;
                     right: 80px;
                 }
+        
+        /* Modal */
+        .modal #option{
+            display: flex;
+            flex-wrap: wrap;
+        }
 }
 
 
