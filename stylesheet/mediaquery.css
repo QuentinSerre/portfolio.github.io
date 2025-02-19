@@ -73,7 +73,9 @@
 
     /* Pro exp */
     .flip_card{
-        height: 1050px;
+        height: 910px;
+        width: 100vw;
+        margin: 50px auto 0px auto;
     }
 
         .exp_card_front img{
@@ -82,6 +84,10 @@
 
         .exp_card_back p, .exp_card_back h4, .exp_card_back li ul li{
             margin: 0px 30px 0px 30px;
+        }
+
+        .exp_card_back p, .exp_card_back h4, .exp_card_back li{
+            font-size: 16px;
         }
 
     /* Footer */
