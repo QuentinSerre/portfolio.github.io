@@ -15,6 +15,7 @@
 
         #exp_content{
             display: flex;
+            flex-wrap: wrap;
             align-items: center;
         }
 
@@ -22,7 +23,7 @@
 .flip_card{
     width: 600px;
     height: 860px;
-    margin: 100p;
+    margin: 50px 100px;
     margin: 100px auto 0px auto;
 }
 
@@ -50,7 +51,7 @@
         position: absolute;
         inset: 0;
         margin: auto;
-        width: 20vw;
+        width: 25vw;
     }
 
 /* Back */

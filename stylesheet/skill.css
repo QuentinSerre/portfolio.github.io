@@ -7,7 +7,8 @@
     .skill_container{
         display: flex;
         margin: 100px auto 0px auto;
-        width: 1300px;
+        max-width: 1300px;
+        border: solid red 1px;
     }
 
         .skill_container h3{
@@ -46,13 +47,13 @@
                 filter: blur(3px);
             }
 
-            .item{
-                padding: 35px;
-            }
+                .item{
+                    padding: 35px;
+                }
 
-            .item img{
-                width: 90px;
-            }
+                    .item img{
+                        width: 90px;
+                    }
 
 /* Animation skill card*/
 .skill_right{

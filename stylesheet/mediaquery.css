@@ -1,3 +1,10 @@
+@media only screen and (max-width: 1240px){
+    /* Skill */
+    .skill_container{
+        flex-wrap: wrap;
+    }
+
+}
 @media only screen and (max-width: 500px){
     /* Presentation */
     #presentation{
@@ -62,6 +69,19 @@
         .modal #option{
             display: flex;
             flex-wrap: wrap;
+        }
+
+    /* Pro exp */
+    .flip_card{
+        height: 1050px;
+    }
+
+        .exp_card_front img{
+            width: 80vw;
+        }
+
+        .exp_card_back p, .exp_card_back h4, .exp_card_back li ul li{
+            margin: 0px 30px 0px 30px;
         }
 }
 
