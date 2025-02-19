@@ -83,6 +83,16 @@
         .exp_card_back p, .exp_card_back h4, .exp_card_back li ul li{
             margin: 0px 30px 0px 30px;
         }
+
+    /* Footer */
+    #contact img{
+        margin: 180px 3vw 0 3vw;
+    }
 }
 
-
+@media only screen and (max-width: 439px){
+    /* Footer */
+    #contact img{
+        margin: 180px 2vw 0 2vw;
+    }
+}

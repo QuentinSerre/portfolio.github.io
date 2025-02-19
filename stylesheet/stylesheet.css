@@ -153,51 +153,49 @@ footer{
         text-decoration: underline;
     }
 
-    #contact img{
-        width: 48px;
-        margin-top: 180px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+        #contact img{
+            width: 48px;
+            margin: 180px 20px 0 20px;
+        }
 
-    #cv_icon:hover{
-        animation: leftRight .5s;
-    }
+        #cv_icon:hover{
+            animation: leftRight .5s;
+        }
 
-    @keyframes leftRight{
-        0%   {transform: rotate(0deg);}
-        25%  {transform: rotate(15deg);}
-        50%  {transform: rotate(-15deg);}
-        75%  {transform: rotate(15deg);}
-        100% {transform: rotate(0deg);}
-    }
+        @keyframes leftRight{
+            0%   {transform: rotate(0deg);}
+            25%  {transform: rotate(15deg);}
+            50%  {transform: rotate(-15deg);}
+            75%  {transform: rotate(15deg);}
+            100% {transform: rotate(0deg);}
+        }
 
-    #mail_icon{
-        transition: .5s;
-        transform: scale(1, 1);
-    }
-    
-    #mail_icon:hover{
-        transition: .5s;
-        transform: scale(-1, 1);
-    }
+        #mail_icon{
+            transition: .5s;
+            transform: scale(1, 1);
+        }
+        
+        #mail_icon:hover{
+            transition: .5s;
+            transform: scale(-1, 1);
+        }
 
-    #linkedin_icon:hover{
-        animation: boing .5s;
-    }
+        #linkedin_icon:hover{
+            animation: boing .5s;
+        }
 
-    @keyframes boing{
-        0%  {transform: scale(1, .8);}
-        50%  {transform: translate(0px, -8px);}
-        100% {transform: translate(0px, 0px);}
-    }
+        @keyframes boing{
+            0%  {transform: scale(1, .8);}
+            50%  {transform: translate(0px, -8px);}
+            100% {transform: translate(0px, 0px);}
+        }
 
-    #github_icon{
-        transition: .5s;
-        transform: rotate(0deg);
-    }
-    
-    #github_icon:hover{
-        transition: .5s;
-        transform: rotate(360deg);
-    }
+        #github_icon{
+            transition: .5s;
+            transform: rotate(0deg);
+        }
+        
+        #github_icon:hover{
+            transition: .5s;
+            transform: rotate(360deg);
+        }
