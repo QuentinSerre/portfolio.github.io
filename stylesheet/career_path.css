@@ -130,8 +130,7 @@
     /* Licence position elm */
     .licence{
         position: absolute;
-        inset: 0;
-        margin: auto;
+        margin-left: 31%;
     }
 
         .licence_line{
@@ -146,7 +145,7 @@
     /* Bac position elm */
     .bts{
         position: absolute;
-        margin-left: 63%;
+        margin-left: 49%;
     }
 
         /* Bts card */
@@ -171,6 +170,21 @@
                 45%{opacity: 0.3;}
                 60%{opacity: 0;}
             }
+    
+    /* Futur position elm */
+    .future{
+        position: absolute;
+        margin-left: 66%;
+    }
+
+        .futur_line{
+            top: -120px;
+        }
+
+        /* Futur card */
+        .futur_card{
+            top: -340px;
+        }
 
 /* Modal Bts */
 .overlay{

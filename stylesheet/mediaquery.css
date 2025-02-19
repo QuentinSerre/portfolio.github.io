@@ -3,8 +3,82 @@
     .skill_container{
         flex-wrap: wrap;
     }
+}
+
+@media only screen and (max-width: 1024px){
+    .bac{
+        margin-left: 10%;
+    }
+
+    .licence{
+        margin-left: 26%;
+    }
+
+    .bts{
+        margin-left: 44%;
+    }
+
+    .future{
+        margin-left: 62%;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    /* Career path */
+    #career_path{
+        height: 70vh;
+    }
+    
+        .circle, .vertical_line, .career_line{
+            display: none;
+        }
+
+        .bac .vertical_line{
+            display: block;
+            height: 900px;
+            margin-top: 150px;
+        }
+
+            .licence, .bac, .bts, .future{
+                position: absolute;
+                inset: 0;
+                margin: auto;
+            }
+
+            .bac{
+                top: -400px;
+            }
+
+                .date_bac{
+                    top: 110px;
+                    right: 80px;
+                }
+
+            .bts{
+                top: 175px;
+            }
+
+                .date_bts{
+                    top: 110px;
+                    right: 80px;
+                }
+
+            .licence{
+                top: 340px;
+            }
+
+            .future{
+                top: 920px;
+            }
+
+                .date_down{
+                    top: -355px;
+                    right: 80px;
+                }
+
 
 }
+
 @media only screen and (max-width: 500px){
     /* Presentation */
     #presentation{
@@ -22,54 +96,13 @@
             margin-top: 30vh;
             width: 100%;
         }
-    
-    /* Career path */
-    #career_path{
-        height: 50vh;
-    }
-    
-        .circle, .vertical_line, .career_line{
-            display: none;
-        }
-        .bac .vertical_line{
-            display: block;
-            height: 600px;
-            margin-top: 150px;
-        }
-            .licence, .bac, .bts{
-                position: absolute;
-                inset: 0;
-                margin: auto;
-            }
 
-            .bac{
-                top: -400px;
-            }
-                .date_bac{
-                    top: 110px;
-                    right: 80px;
-                }
-            
-            .licence{
-                top: 340px;
-            }
-                .date_licence{
-                    top: -355px;
-                    right: 80px;
-                }
-            .bts{
-                top: 175px;
-            }
-                .date_bts{
-                    top: 110px;
-                    right: 80px;
-                }
-        
-        /* Modal */
-        .modal #option{
-            display: flex;
-            flex-wrap: wrap;
-        }
+    /* Career path */
+    /* Modal */
+    .modal #option{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
     /* Pro exp */
     .flip_card{
