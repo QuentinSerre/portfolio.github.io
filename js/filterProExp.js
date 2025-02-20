@@ -1,5 +1,5 @@
 // Filter pro_exp
-filterSelection("all")
+filterSelection("professional")
 function filterSelection(c)
 {
   var x, i;
@@ -46,19 +46,4 @@ for (var i = 0; i < btns.length; i++)
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
-
-
-function openFilter()
-{
-  document.getElementById("question").style.display = "block";
-}
-
-function send()
-{
-  var answer = document.getElementById("answer").value;
-  if (answer.toLowerCase() == "adventure")
-  {
-    document.getElementById("container_e").style.display = "block";
-  }
 }
