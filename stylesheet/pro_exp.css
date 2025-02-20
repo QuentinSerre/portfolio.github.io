@@ -95,3 +95,9 @@
     z-index: 1;
     transform: rotateY(0deg);
 }
+
+#feloche{
+    color: #000000;
+    font-weight: bold;
+    text-decoration: underline;
+}

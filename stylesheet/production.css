@@ -13,6 +13,7 @@
 
     #description_art h2{
         font-size: 24px;
+        margin-left: 2px;
     }
 
     .description_container{
@@ -45,3 +46,8 @@
                     list-style: circle;
                     margin-left: 75px;
                 }
+
+#feloche{
+    font-weight: bold;
+    text-decoration: underline;
+}
