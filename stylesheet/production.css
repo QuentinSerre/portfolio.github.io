@@ -1,100 +1,47 @@
 /* Production */
-#production{
-    border: 1px solid #1E1E1E;
+#description_art, #article_container{
+    text-align: justify;
+    width: 1000px;
+    margin: 0px auto 0px auto;
 }
 
-#btn_container{
-    margin: 100px 0 -50px 0;
-}
-
-    .btn{
-        border: none;
-        border-radius: 3px;
-        padding: 10px;
-        margin: 2px;
-        transition: all .3s;
+    #description_art h1{
+        font-size: 48px;
+        text-align: center;
+        padding: 30px;
     }
 
-.btn:hover{
-    opacity: .6;
-}
-
-/* Carousel */
-.carousel_container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-    .carousel_card{
-        position: relative;
-        display: none;
-        border-radius: 15px;
-        margin: 8px;
-        height: 500px;
-        width: 120px;
-        overflow: hidden;
-        transition: all .5s;
-        filter: drop-shadow(3px 3px 10px #3c285e);
+    #description_art h2{
+        font-size: 24px;
     }
 
-        .carousel_card a {
-            text-decoration: none;
-            color: #ffffff;
+    .description_container{
+        background-color: #3c285e;
+        box-shadow: #65439c 0px 0px 5px 0px, #65439c 0px 0px 1px 0px;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 15px;
+    }
+
+        .description_container > ul > li{
+            list-style: inside;
+            list-style-position: outside;
+            margin-left: 75px;
         }
 
-            .carousel_card img{
-                height: 500px;
-                width: 800px
-            }
+        .description_container h2{
+            margin: 5px;
+        }
 
-            .description_card{
-                left: 35px;
-                bottom: 30px;
-                width: 300px;
-            }
+        #description_part{
+            display: flex;
+        }
 
-            .description_card{
-                position: absolute;
-                display: flex;
-                z-index: 1;
-                width: 400px;
-            }
-
-                .bg_number{
-                    margin-top: auto;
-                    margin-bottom: auto;
+                #description_left, #description_right{
+                    width: 500px;
                 }
 
-                    .bg_number h1{
-                        font-weight: bold;
-                        padding: 10px 20px 10px 20px;
-                        background-color: #3c285e;
-                        border-radius: 25px;
-                    }
-
-                        #one{
-                            padding: 10px 22px 10px 22px;
-                        }
-
-            .information{
-                margin-left: 35px;
-                text-align: left;
-                background-color: #3c285e;
-                border-radius: 10px;
-                padding: 10px 15px 10px 15px;
-            }
-
-                .information h3{
-                    font-weight: bold;
+                .description_container li li{
+                    list-style: circle;
+                    margin-left: 75px;
                 }
-
-
-.carousel_card:hover{
-    width: 800px;
-}
-
-/* For filter */
-.show {
-    display: block;
-}
