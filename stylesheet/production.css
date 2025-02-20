@@ -47,7 +47,8 @@
                     margin-left: 75px;
                 }
 
-#feloche{
-    font-weight: bold;
-    text-decoration: underline;
-}
+                .description_container #feloche{
+                    color: #ffffff;
+                    font-weight: bold;
+                    text-decoration: underline;
+                }

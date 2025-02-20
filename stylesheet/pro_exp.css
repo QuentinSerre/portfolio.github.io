@@ -86,6 +86,12 @@
                 list-style: inside;
             }
 
+            .exp_card_back #feloche{
+                color: #000000;
+                font-weight: bold;
+                text-decoration: underline;
+            }
+
 .flip_card:hover .exp_card_front{
     z-index: 0;
     transform: rotateY(180deg);
@@ -94,10 +100,4 @@
 .flip_card:hover .exp_card_back{
     z-index: 1;
     transform: rotateY(0deg);
-}
-
-#feloche{
-    color: #000000;
-    font-weight: bold;
-    text-decoration: underline;
 }
