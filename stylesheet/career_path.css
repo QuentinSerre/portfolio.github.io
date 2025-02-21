@@ -116,52 +116,52 @@
     right: -8px;
 }
 
-    /* Bac position elm */
-    .bac{
+    /* Licence position elm */
+    .licence{
         position: absolute;
         margin-left: 15%;
     }
 
-        /* Bac card */
-        .bac_card{
+        /* Licence card */
+        .licence_card{
             top: 120px;
         }
 
-    /* Licence position elm */
-    .licence{
+    /* Bts position elm */
+    .bts{
         position: absolute;
         margin-left: 31%;
     }
 
-        .licence_line{
+        .bts_line{
             top: -120px;
         }
 
-        /* Licence card */
-        .licence_card{
+        /* Bts card */
+        .bts_card{
             top: -345px;
         }
 
-    /* Bac position elm */
-    .bts{
+        /* Touch Icon */
+        #touch_icon{
+            opacity: 0;
+            width: 64px;
+            right: 210px;
+            top: 15px;
+            animation: touch 4s infinite;
+        }
+
+    /* Master position elm */
+    .master{
         position: absolute;
         margin-left: 49%;
     }
 
-        /* Bts card */
-        .bts_card{
+        /* Master card */
+        .master_card{
             top: 120px;
             cursor: pointer;
         }
-
-            /* Touch Icon */
-            #touch_icon{
-                opacity: 0;
-                width: 64px;
-                right: 210px;
-                top: 15px;
-                animation: touch 4s infinite;
-            }
 
             @keyframes touch {
                 0%{opacity: 0;}
@@ -177,12 +177,12 @@
         margin-left: 66%;
     }
 
-        .futur_line{
+        .future_line{
             top: -120px;
         }
 
         /* Futur card */
-        .futur_card{
+        .future_card{
             top: -340px;
         }
 

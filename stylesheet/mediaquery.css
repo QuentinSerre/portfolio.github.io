@@ -33,37 +33,37 @@
             display: none;
         }
 
-        .bac .vertical_line{
+        .licence .vertical_line{
             display: block;
             height: 900px;
             margin-top: 150px;
         }
 
-            .licence, .bac, .bts, .future{
+            .licence, .bts, .master,.future{
                 position: absolute;
                 inset: 0;
                 margin: auto;
             }
 
-            .bac{
+            .licence{
                 top: -400px;
             }
 
-                .date_bac{
+                .date_licence{
+                    top: 110px;
+                    right: 80px;
+                }
+
+            .master{
+                top: 175px;
+            }
+
+                .date_master{
                     top: 110px;
                     right: 80px;
                 }
 
             .bts{
-                top: 175px;
-            }
-
-                .date_bts{
-                    top: 110px;
-                    right: 80px;
-                }
-
-            .licence{
                 top: 340px;
             }
 
@@ -76,19 +76,12 @@
                     right: 80px;
                 }
 
-                #description_part{
-                    display: flex;
-                    flex-wrap: wrap;
-                }
-}
-
-@media only screen and (max-width: 768px){
+    /* Production */
     #description_part{
         display: flex;
         flex-wrap: wrap;
     }
 }
-
 @media only screen and (max-width: 500px){
     /* Presentation */
     #presentation{
