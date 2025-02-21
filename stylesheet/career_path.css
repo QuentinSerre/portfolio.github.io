@@ -140,6 +140,7 @@
         /* Bts card */
         .bts_card{
             top: -345px;
+            cursor: pointer;
         }
 
         /* Touch Icon */
@@ -160,7 +161,6 @@
         /* Master card */
         .master_card{
             top: 120px;
-            cursor: pointer;
         }
 
             @keyframes touch {
