@@ -2,9 +2,6 @@ const searchInput = document.querySelector('#hidden');
 const player = document.querySelector('#player');
 const key = document.querySelector('#key');
 
-// my array of walls doesn't work :(
-// const allWalls = Array.from(document.querySelectorAll('.wall'));
-
 const audio1 = new Audio("../file/adventure-atari-2600-take.mp3")
 const audio2 = new Audio("../file/adventure-atari-2600-throw.mp3")
 
@@ -42,7 +39,8 @@ function checkInput(occ){
                     positionX -= velocity;
                     player.style.setProperty("--top", positionX +"px");
 
-                    if ((keyCollision() || wallCollision1() || wallCollision2() || wallCollision3() || wallCollision4() || wallCollision5() || wallCollision6() || wallCollision7() || wallCollision8() || wallCollision9() || wallCollision10() || wallCollision11() || wallCollision12() || wallCollision13() || wallCollision14() || wallCollision15()) === true){
+                    // if ((keyCollision() || wallCollision1() || wallCollision2() || wallCollision3() || wallCollision4() || wallCollision5() || wallCollision6() || wallCollision7() || wallCollision8() || wallCollision9() || wallCollision10() || wallCollision11() || wallCollision12() || wallCollision13() || wallCollision14() || wallCollision15()) === true){
+                    if ((keyCollision() || wallCollision()) === true){
                         positionX += velocity;
                     }
                 }
@@ -51,7 +49,8 @@ function checkInput(occ){
                     positionX += velocity;
                     player.style.setProperty("--top", positionX +"px");
 
-                    if ((keyCollision() || wallCollision1() || wallCollision2() || wallCollision3() || wallCollision4() || wallCollision5() || wallCollision6() || wallCollision7() || wallCollision8() || wallCollision9() || wallCollision10() || wallCollision11() || wallCollision12() || wallCollision13() || wallCollision14() || wallCollision15()) === true){
+                    // if ((keyCollision() || wallCollision1() || wallCollision2() || wallCollision3() || wallCollision4() || wallCollision5() || wallCollision6() || wallCollision7() || wallCollision8() || wallCollision9() || wallCollision10() || wallCollision11() || wallCollision12() || wallCollision13() || wallCollision14() || wallCollision15()) === true){
+                    if ((keyCollision() || wallCollision()) === true){
                         positionX -= velocity;
                     }
                 }
@@ -61,7 +60,8 @@ function checkInput(occ){
                     positionY -= velocity;
                     player.style.setProperty("--left", positionY +"px");
 
-                    if ((keyCollision() || wallCollision1() || wallCollision2() || wallCollision3() || wallCollision4() || wallCollision5() || wallCollision6() || wallCollision7() || wallCollision8() || wallCollision9() || wallCollision10() || wallCollision11() || wallCollision12() || wallCollision13() || wallCollision14() || wallCollision15()) === true){
+                    // if ((keyCollision() || wallCollision1() || wallCollision2() || wallCollision3() || wallCollision4() || wallCollision5() || wallCollision6() || wallCollision7() || wallCollision8() || wallCollision9() || wallCollision10() || wallCollision11() || wallCollision12() || wallCollision13() || wallCollision14() || wallCollision15()) === true){
+                    if ((keyCollision() || wallCollision()) === true){
                         positionY += velocity;
                     }
                 }
@@ -70,7 +70,8 @@ function checkInput(occ){
                     positionY += velocity;
                     player.style.setProperty("--left", positionY +"px");
 
-                    if ((keyCollision() || wallCollision1() || wallCollision2() || wallCollision3() || wallCollision4() || wallCollision5() || wallCollision6() || wallCollision7() || wallCollision8() || wallCollision9() || wallCollision10() || wallCollision11() || wallCollision12() || wallCollision13() || wallCollision14() || wallCollision15()) === true){
+                    // if ((keyCollision() || wallCollision1() || wallCollision2() || wallCollision3() || wallCollision4() || wallCollision5() || wallCollision6() || wallCollision7() || wallCollision8() || wallCollision9() || wallCollision10() || wallCollision11() || wallCollision12() || wallCollision13() || wallCollision14() || wallCollision15()) === true){
+                    if ((keyCollision() || wallCollision()) === true){
                         positionY -= velocity;
                     }
                 }
@@ -98,154 +99,30 @@ function keyCollision(){
 }
 
 // Detect wall collision
-function wallCollision1(){
-    // allWalls.forEach(wall => {
-        var wall = document.querySelector('#wall1');
-        return !(
-            (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-            (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-            (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-            (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-        );
-    // })
-}
+function wallCollision(){
+        const allWalls = Array.from(document.querySelectorAll('.wall'));
+        var arrayCollision = new Array();
+        var collision = false;
 
-function wallCollision2(){
-    var wall = document.querySelector('#wall2');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
+        // Create array of all collisions
+        allWalls.forEach(wall => {
+            arrayCollision.push(!(
+                (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
+                (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
+                (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
+                (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
+            ) === true)
+        });
+        console.log(arrayCollision);
 
-function wallCollision3(){
-    var wall = document.querySelector('#wall3');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
+        // For all elm verify collision
+        for(var i = 0; i<arrayCollision.length; i++)
+        {
+            if(arrayCollision[i] === true)
+            {
+                collision = true;
+            }
+        }
 
-function wallCollision4(){
-    var wall = document.querySelector('#wall4');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
-
-function wallCollision5(){
-    var wall = document.querySelector('#wall5');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
-
-function wallCollision6(){
-    var wall = document.querySelector('#wall6');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
-
-function wallCollision7(){
-    var wall = document.querySelector('#wall7');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
-
-function wallCollision8(){
-    var wall = document.querySelector('#wall8');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
-
-function wallCollision9(){
-    var wall = document.querySelector('#wall9');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
-
-function wallCollision10(){
-    var wall = document.querySelector('#wall10');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
-
-function wallCollision11(){
-    var wall = document.querySelector('#wall11');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
-
-function wallCollision12(){
-    var wall = document.querySelector('#wall12');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
-
-function wallCollision13(){
-    var wall = document.querySelector('#wall13');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
-
-function wallCollision14(){
-    var wall = document.querySelector('#wall14');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
-}
-
-function wallCollision15(){
-    var wall = document.querySelector('#wall15');
-    return !(
-        (player.getBoundingClientRect().bottom < wall.getBoundingClientRect().top) ||
-        (player.getBoundingClientRect().top > wall.getBoundingClientRect().bottom) ||
-        (player.getBoundingClientRect().right < wall.getBoundingClientRect().left) ||
-        (player.getBoundingClientRect().left > wall.getBoundingClientRect().right)
-    );
+        return collision;
 }
