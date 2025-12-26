@@ -1,0 +1,99 @@
+/* Production */
+#production {
+  border: 1px solid #1e1e1e;
+}
+
+#btn_container {
+  margin: 100px 0 -50px 0;
+}
+
+.btn {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 2px;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+/* Carousel */
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-card {
+  position: relative;
+  display: none;
+  border-radius: 15px;
+  margin: 8px;
+  height: 500px;
+  width: 120px;
+  overflow: hidden;
+  transition: all 0.5s;
+  filter: drop-shadow(3px 3px 10px #3c285e);
+}
+
+.carousel-card a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.carousel-card img {
+  height: 500px;
+  width: 800px;
+}
+
+.description-card {
+  left: 35px;
+  bottom: 30px;
+  width: 300px;
+}
+
+.description-card {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  width: 400px;
+}
+
+.bg-number {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bg-number h1 {
+  font-weight: bold;
+  padding: 10px 20px 10px 20px;
+  background-color: #3c285e;
+  border-radius: 25px;
+}
+
+#one {
+  padding: 10px 22px 10px 22px;
+}
+
+.information {
+  margin-left: 35px;
+  text-align: left;
+  background-color: #3c285e;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+.information h3 {
+  font-weight: bold;
+}
+
+.carousel-card:hover {
+  width: 800px;
+}
+
+/* For filter */
+.show {
+  display: block;
+}

@@ -6,17 +6,17 @@
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="shortcut icon" href="asset/icon/icons8-identity-24.png" type="image/x-icon">
-    <!-- Link sylesheet -->
-    <link rel="stylesheet" href="stylesheet/stylesheet.css">
-    <link rel="stylesheet" href="stylesheet/presentation.css">
-    <link rel="stylesheet" href="stylesheet/career_path.css">
-    <link rel="stylesheet" href="stylesheet/skill.css">
-    <link rel="stylesheet" href="stylesheet/pro_exp.css">
-    <link rel="stylesheet" href="stylesheet/carousel.css">
-    <link rel="stylesheet" href="stylesheet/ee.css">
-    <link rel="stylesheet" href="stylesheet/background_wave.css">
-    <link rel="stylesheet" href="stylesheet/mediaquery.css">
+    <link rel="shortcut icon" href="/src/medias/assets/icons/icons8-identity-24.png" type="image/x-icon">
+    <!-- Link styles -->
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="stylesheet" href="src/styles/presentation.css">
+    <link rel="stylesheet" href="src/styles/careerPath.css">
+    <link rel="stylesheet" href="src/styles/skill.css">
+    <link rel="stylesheet" href="src/styles/proExp.css">
+    <link rel="stylesheet" href="src/styles/carousel.css">
+    <link rel="stylesheet" href="src/styles/ee.css">
+    <link rel="stylesheet" href="src/styles/backgroundWave.css">
+    <link rel="stylesheet" href="src/styles/mediaquery.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,12 +36,12 @@
 <body>
     <header>
         <!-- Open icon menu -->
-        <img src="asset/icon/icons8-menu-96.png" alt="openMenuIcon" onclick="openCloseNav()">
+        <img src="/src/medias/assets/icons/icons8-menu-96.png" alt="openMenuIcon" onclick="openCloseNav()">
     </header>
     <!-- Navigation menu -->
     <nav id="nav_menu">
         <!-- Close menu icon -->
-        <img src="asset/icon/icons8-cross-96.png" alt="openMenuIcon" onclick="openCloseNav()">
+        <img src="/src/medias/assets/icons/icons8-cross-96.png" alt="openMenuIcon" onclick="openCloseNav()">
         <ul>
             <!-- Profile -->
             <li id="has_sub_menu"><a href="#profile">Profil</a>
@@ -57,7 +57,7 @@
             <!-- Project -->
             <li><a href="#production">Réalisations</a></li>
             <!-- Technological watch -->
-            <li><a href="html/technological.html">Veille Technologique</a></li>
+            <li><a href="app/technological/technological.html">Veille Technologique</a></li>
             <!-- Contact -->
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -65,10 +65,10 @@
     <div id="player"></div>
     <input type="text" id="hidden" name="ee" autofocus>
     <div class="container_e" id="container_e_second">
-        <div class="wall wall_up_left" id="wall"></div>
-        <div class="wall wall_up_right" id="wall"></div>
+        <div class="wall wall-up-left" id="wall"></div>
+        <div class="wall wall-up-right" id="wall"></div>
         <div id='copyrighting'>Created Quentin. . by . . . . Serre</div>
-        <div class="wall wall_down" id="wall"></div>
+        <div class="wall wall-down" id="wall"></div>
     </div>
     <!-- Content -->
     <main>
@@ -76,7 +76,7 @@
         <article id="profile">
             <!-- Presentation -->
             <section id="presentation">
-                <img src="asset/image/profil.png" alt="profilePicture">
+                <img src="/src/medias/assets/images/profil-photo.png" alt="profilePicture">
                 <div id="description">
                     <h1 class="hammersmith-one-regular">SERRE<br>Quentin</h1>
                     <h2>Etudiant BTS SIO</h2>
@@ -84,27 +84,27 @@
             </section>
             <!-- Career path -->
             <section id="career_path">
-                <h1 class="bg_title">Parcours</h1>
+                <h1 class="bg-title">Parcours</h1>
                 <h2>Mon parcours</h2>
                 <!-- Career line -->
-                <div class="career_line">
+                <div class="career-line">
                     <!-- Start -->
-                    <div class="circle start_point"></div>
+                    <div class="circle start-point"></div>
                     <!-- End -->
-                    <div class="circle end_point"></div>
+                    <div class="circle end-point"></div>
                 </div>
-                <div class="career_step">
+                <div class="career-step">
                     <!-- Licence -->
                     <div class="licence">
                         <!-- Date -->
-                        <p class="date date_up date_licence">2022-2023</p>
+                        <p class="date date-up date-licence">2022-2023</p>
                         <!-- Career point -->
-                        <div class="circle career_point abs_elm_centered"></div>
+                        <div class="circle career-point abs-elm-centered"></div>
                         <!-- Vertical line -->
-                        <div class="vertical_line licence_line abs_elm_centered"></div>
+                        <div class="vertical-line licence-line abs-elm-centered"></div>
                         <!-- Card -->
-                        <div class="card licence_card abs_elm_centered">
-                            <img src="asset/icon/icons8-graduate-94.png" alt="graduateIcon">
+                        <div class="card licence-card abs-elm-centered">
+                            <img src="/src/medias/assets/icons/icons8-graduate-94.png" alt="graduateIcon">
                             <h3>Licence Informatique Mathématiques et Applications</h3>
                             <ul>
                                 <li>• L'UGA de Valence</li>
@@ -114,16 +114,16 @@
                     <!-- BTS -->
                     <div class="bts">
                         <!-- Date -->
-                        <p class="date date_down date_bts">2023-2025</p>
+                        <p class="date date-down date-bts">2023-2025</p>
                         <!-- Career point -->
-                        <div class="circle career_point abs_elm_centered"></div>
+                        <div class="circle career-point abs-elm-centered"></div>
                         <!-- Vertical line -->
-                        <div class="vertical_line bts_line abs_elm_centered"></div>
+                        <div class="vertical-line bts-line abs-elm-centered"></div>
                         <!-- Card -->
-                        <div class="card bts_card abs_elm_centered" onclick="openModal()">
+                        <div class="card bts-card abs-elm-centered" onclick="openModal()">
                             <!-- Touch icon -->
-                            <img src="asset/icon/icons8-touch-50.png" id="touch_icon" alt="touch_icon">
-                            <img src="asset/icon/icons8-greffier-94.png" alt="graduateIcon">
+                            <img src="/src/medias/assets/icons/icons8-touch-50.png" id="touch_icon" alt="touch_icon">
+                            <img src="/src/medias/assets/icons/icons8-greffier-94.png" alt="graduateIcon">
                             <h3>BTS SIO</h3>
                             <ul>
                                 <li>• Option : SLAM</li>
@@ -134,14 +134,14 @@
                     <!-- Futur -->
                     <div class="master">
                         <!-- Date -->
-                        <p class="date date_up date_master">2025 - 2026</p>
+                        <p class="date date-up date-master">2025 - 2026</p>
                         <!-- Career point -->
-                        <div class="circle career_point abs_elm_centered"></div>
+                        <div class="circle career-point abs-elm-centered"></div>
                         <!-- Vertical line -->
-                        <div class="vertical_line abs_elm_centered"></div>
+                        <div class="vertical-line abs-elm-centered"></div>
                         <!-- Card -->
-                        <div class="card master_card abs_elm_centered">
-                            <img src="asset/icon/icons8-diplôme-94.png" alt="graduateIcon">
+                        <div class="card master-card abs-elm-centered">
+                            <img src="/src/medias/assets/icons/icons8-diplôme-94.png" alt="graduateIcon">
                             <h3>Licence / Master</h3>
                             <ul>
                                 <li>• Institution Supérieur Saint-Denis Annonay</li>
@@ -152,14 +152,14 @@
                     <!-- Futur -->
                     <div class="future">
                         <!-- Date -->
-                        <p class="date date_down date_future">Futur</p>
+                        <p class="date date-down date-future">Futur</p>
                         <!-- Career point -->
-                        <div class="circle career_point abs_elm_centered"></div>
+                        <div class="circle career-point abs-elm-centered"></div>
                         <!-- Vertical line -->
-                        <div class="vertical_line future_line abs_elm_centered"></div>
+                        <div class="vertical-line future-line abs-elm-centered"></div>
                         <!-- Card -->
-                        <div class="card future_card abs_elm_centered">
-                            <img src="asset/icon/icons8-ordinateur-portable-94.png" alt="LaptopIcon">
+                        <div class="card future-card abs-elm-centered">
+                            <img src="/src/medias/assets/icons/icons8-ordinateur-portable-94.png" alt="LaptopIcon">
                             <h3>Développeur<br>FullStack</h3>
                             <ul>
                                 <li>• Potentiellement en freelance</li>
@@ -171,7 +171,8 @@
                 <!-- BTS Modal -->
                 <div class="overlay">
                     <div class="modal">
-                        <img src="asset/icon/icons8-croix-48.png" alt="btnCloseModal" onclick="closeModal()">
+                        <img src="/src/medias/assets/icons/icons8-croix-48.png" alt="btnCloseModal"
+                            onclick="closeModal()">
                         <h3>🎓 BTS SIO (Services Informatiques aux Organisations)</h3>
                         <p>Le BTS SIO est une formation de 2 ans après le bac qui prépare aux métiers de l'informatique.
                             Il forme des techniciens capables de concevoir, développer et maintenir des systèmes
@@ -208,41 +209,53 @@
             </section>
             <!-- Skills -->
             <section id="skill">
-                <h1 class="bg_title">Compétence</h1>
+                <h1 class="bg-title">Compétence</h1>
                 <h2>Mes compétences</h2>
                 <!-- Languages -->
-                <div class="skill_container">
-                    <div class="container_left">
+                <div class="skill-container">
+                    <div class="container-left">
                         <h3>Langages</h3>
                         <p>Voici la liste de tous les langages de programmation que je maîtrise et utilise pour réaliser
                             différents projets. J'utilise principalement HTML, CSS, PHP, JS et MySQL pour la conception
                             de clients légers. Et C# pour la création de clients lourds.</p>
                     </div>
                     <aside>
-                        <div class="skill_card skill_right">
-                            <div class="item"><img src="asset/icon/icons8-html-96.png" alt="htmlIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-css-96.png" alt="cssIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-javascript-96.png" alt="jsIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-php-96.png" alt="phpIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-c-sharp-logo-96.png" alt="csharpIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-python-94.png" alt="pythonIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-mysql-96.png" alt="iconMySql"></div>
+                        <div class="skill-card skill-right">
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-html-96.png" alt="htmlIcon">
+                            </div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-css-96.png" alt="cssIcon"></div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-javascript-96.png" alt="jsIcon">
+                            </div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-php-96.png" alt="phpIcon"></div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-c-sharp-logo-96.png"
+                                    alt="csharpIcon"></div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-python-94.png" alt="pythonIcon">
+                            </div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-mysql-96.png" alt="iconMySql">
+                            </div>
                         </div>
                     </aside>
                 </div>
                 <!-- Technologies -->
-                <div class="skill_container">
-                    <div class="container_left">
-                        <div class="skill_card skill_left">
-                            <div class="item"><img src="asset/icon/icons8-wordpress-94.png" alt="wordpressIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-bootstrap-96.png" alt="bootstrapIcon"></div>
-                            <div class="item"><img src="asset/icon/xampp_logo.png" alt="xamppIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-figma-96.png" alt="figmaIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-github-94.png" alt="githubIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-git-96.png" alt="gitbashIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-visual-studio-code-96.png" alt="vscodeIcon">
+                <div class="skill-container">
+                    <div class="container-left">
+                        <div class="skill-card skill-left">
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-wordpress-94.png"
+                                    alt="wordpressIcon"></div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-bootstrap-96.png"
+                                    alt="bootstrapIcon"></div>
+                            <div class="item"><img src="/src/medias/assets/icons/xampp_logo.png" alt="xamppIcon"></div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-figma-96.png" alt="figmaIcon">
                             </div>
-                            <div class="item"><img src="asset/icon/icons8-visual-studio-96.png" alt="vsIcon"></div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-github-94.png" alt="githubIcon">
+                            </div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-git-96.png" alt="gitbashIcon">
+                            </div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-visual-studio-code-96.png"
+                                    alt="vscodeIcon">
+                            </div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-visual-studio-96.png"
+                                    alt="vsIcon"></div>
                         </div>
                     </div>
                     <aside>
@@ -253,18 +266,21 @@
                     </aside>
                 </div>
                 <!-- Other -->
-                <div class="skill_container">
-                    <div class="container_left">
+                <div class="skill-container">
+                    <div class="container-left">
                         <h3>Autres</h3>
                         <p>Je travaille principalement sur Windows et Linux. Et j'utilise de manière régulière Adobe
                             Photoshop et Adobe Premiere Pro.</p>
                     </div>
                     <aside>
-                        <div class="skill_card skill_right">
-                            <div class="item"><img src="asset/icon/icons8-windows-96.png" alt="windowsIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-linux-96.png" alt="linuxIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-photoshop-96.png" alt="photoshopIcon"></div>
-                            <div class="item"><img src="asset/icon/icons8-adobe-premiere-pro-96.png"
+                        <div class="skill-card skill-right">
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-windows-96.png"
+                                    alt="windowsIcon"></div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-linux-96.png" alt="linuxIcon">
+                            </div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-photoshop-96.png"
+                                    alt="photoshopIcon"></div>
+                            <div class="item"><img src="/src/medias/assets/icons/icons8-adobe-premiere-pro-96.png"
                                     alt="premiereproIcon"></div>
                         </div>
                     </aside>
@@ -274,18 +290,18 @@
         <!-- Professionnal experience -->
         <article id="pro_exp">
             <section id="experience">
-                <h1 class="bg_title">Expériences professionelles</h1>
+                <h1 class="bg-title">Expériences professionelles</h1>
                 <h2>Mes expériences professionelles</h2>
                 <!-- Experiences -->
                 <div id="exp_content">
                     <!-- Network technician -->
-                    <div class="flip_card">
+                    <div class="flip-card">
                         <!-- Front card -->
-                        <div class="exp_card_front">
-                            <img src="asset/image/pro_exp.png" alt="interrogationImage">
+                        <div class="exp-card-front">
+                            <img src="/src/medias/assets/images/pro-exp.png" alt="interrogationImage">
                         </div>
                         <!-- Back card -->
-                        <div class="exp_card_back">
+                        <div class="exp-card-back">
                             <h3>Technicien Réseau<br>Ramsay santé</h3>
                             <h4>Période</h4>
                             <p>Juillet 2023 à Août 2023 (2 mois)</p>
@@ -324,19 +340,21 @@
                         </div>
                     </div>
                     <!-- Internship Annonay -->
-                    <div class="flip_card">
+                    <div class="flip-card">
                         <!-- Front card -->
-                        <div class="exp_card_front">
-                            <img src="asset/image/pro_exp.png" alt="interrogationImage">
+                        <div class="exp-card-front">
+                            <img src="/src/medias/assets/images/pro-exp.png" alt="interrogationImage">
                         </div>
                         <!-- Back card -->
-                        <div class="exp_card_back">
+                        <div class="exp-card-back">
                             <h3>Développeur stagiaire<br>Mairie d'Annonay</h3>
                             <h4>Période</h4>
                             <p>13 mai au 28 juin 2024 (7 semaines)</p>
                             <h4>Description</h4>
                             <p>Durant ma première année de BTS, j'ai pu intégrer le service informatique d'une mairie.
-                                Pendant ce stage j'ai travaillé en grande partie en autonomie. Heureusement, j'étais accompagné de mon acolyte : <a href="https://feloche3270.github.io/Portfolio.github.io/" target="_blank" id="feloche">Félicien</a></p>
+                                Pendant ce stage j'ai travaillé en grande partie en autonomie. Heureusement, j'étais
+                                accompagné de mon acolyte : <a href="https://feloche3270.github.io/Portfolio.github.io/"
+                                    target="_blank" id="feloche">Félicien</a></p>
                             <h4>Missions</h4>
                             <ul>
                                 <li>Amélioration du lanceur d'application métier</li>
@@ -371,13 +389,13 @@
                         </div>
                     </div>
                     <!-- Internship cuisina -->
-                    <div class="flip_card">
+                    <div class="flip-card">
                         <!-- Front card -->
-                        <div class="exp_card_front">
-                            <img src="asset/image/pro_exp.png" alt="interrogationImage">
+                        <div class="exp-card-front">
+                            <img src="/src/medias/assets/images/pro-exp.png" alt="interrogationImage">
                         </div>
                         <!-- Back card -->
-                        <div class="exp_card_back">
+                        <div class="exp-card-back">
                             <h3>Développeur stagiaire<br>CUISIN'A Privas</h3>
                             <h4>Période</h4>
                             <p>6 Janvier 2025 au 7 février 2025 (5 semaines)</p>
@@ -425,21 +443,21 @@
         </article>
         <!-- Production -->
         <article id="production">
-            <h1 class="bg_title">Réalisations</h1>
+            <h1 class="bg-title">Réalisations</h1>
             <h2>Mes réalisations</h2>
             <!-- Sort button -->
             <section id="btn_container">
                 <button class="btn" onclick="filterSelection('professional')">Professionnel</button>
-                <button class="btn" onclick="filterSelection('no_prof')">Non professionel</button>
+                <button class="btn" onclick="filterSelection('no-prof')">Non professionel</button>
             </section>
             <!-- Grid production -->
-            <section class="carousel_container">
+            <section class="carousel-container">
                 <!-- Production card -->
                 <!-- Morpho -->
-                <div class="carousel_card active_card no_prof">
+                <div class="carousel-card active-card no_prof">
                     <a href="html/production_morpho.html">
                         <div class="description_card">
-                            <div class="bg_number">
+                            <div class="bg-number">
                                 <h1 id="one">1</h1>
                             </div>
                             <div class="information">
@@ -447,15 +465,15 @@
                                 <h4>Site Web & Convertisseur audio</h4>
                             </div>
                         </div>
-                        <img src="asset/image/morpho_1.png" alt="imageConvertisseurMorpho">
+                        <img src="//src/medias/assets/images/morpho-1.png" alt="imageConvertisseurMorpho">
                     </a>
                 </div>
                 <!-- OID -->
-                <div class="carousel_card no_prof">
+                <div class="carousel-card no-prof">
                     <a href="html/production_oid.html">
-                        <img src="asset/image/oid_1.png" alt="ImageAppelOffre">
-                        <div class="description_card">
-                            <div class="bg_number">
+                        <img src="/src/medias/assets/images/oid-1.png" alt="ImageAppelOffre">
+                        <div class="description-card">
+                            <div class="bg-number">
                                 <h1>2</h1>
                             </div>
                             <div class="information">
@@ -466,11 +484,11 @@
                     </a>
                 </div>
                 <!-- IT Night -->
-                <div class="carousel_card no_prof">
+                <div class="carousel-card no-prof">
                     <a href="html/production_nuit_info.html">
-                        <img src="asset/image/seaman_1.png" alt="ImageNuitInfo">
-                        <div class="description_card">
-                            <div class="bg_number">
+                        <img src="/src/medias/assets/images/nuit-info-2024-1.png" alt="ImageNuitInfo">
+                        <div class="description-card">
+                            <div class="bg-number">
                                 <h1>3</h1>
                             </div>
                             <div class="information">
@@ -481,11 +499,11 @@
                     </a>
                 </div>
                 <!-- SCS -->
-                <div class="carousel_card no_prof">
+                <div class="carousel-card no-prof">
                     <a href="html/production_scs.html">
-                        <img src="asset/image/scs_3.png" alt="ImageSuperCleanShooter">
-                        <div class="description_card">
-                            <div class="bg_number">
+                        <img src="/src/medias/assets/images/scs-3.png" alt="ImageSuperCleanShooter">
+                        <div class="description-card">
+                            <div class="bg-number">
                                 <h1>4</h1>
                             </div>
                             <div class="information">
@@ -496,11 +514,11 @@
                     </a>
                 </div>
                 <!-- Gestimmo -->
-                <div class="carousel_card no_prof">
+                <div class="carousel-card no-prof">
                     <a href="html/production_gestimmo.html">
-                        <img src="asset/image/gestimmo_1.png" alt="ImageGestimmo">
-                        <div class="description_card">
-                            <div class="bg_number">
+                        <img src="/src/medias/assets/images/gestimmo-1.png" alt="ImageGestimmo">
+                        <div class="description-card">
+                            <div class="bg-number">
                                 <h1>5</h1>
                             </div>
                             <div class="information">
@@ -511,11 +529,11 @@
                     </a>
                 </div>
                 <!-- Internship mission 1 -->
-                <div class="carousel_card professional">
+                <div class="carousel-card professional">
                     <a href="html/production_mission1.html">
-                        <img src="asset/image/stage_mission_1_1.png" alt="imageStageMission1">
-                        <div class="description_card">
-                            <div class="bg_number">
+                        <img src="/src/medias/assets/images/stage-mission-1-1.png" alt="imageStageMission1">
+                        <div class="description-card">
+                            <div class="bg-number">
                                 <h1 id="one">1</h1>
                             </div>
                             <div class="information">
@@ -526,11 +544,11 @@
                     </a>
                 </div>
                 <!-- Internship mission 2 -->
-                <div class="carousel_card professional">
+                <div class="carousel-card professional">
                     <a href="html/production_mission2.html">
-                        <img src="asset/image/stage_mission_2_1.png" alt="imageStageMission2">
-                        <div class="description_card">
-                            <div class="bg_number">
+                        <img src="/src/medias/assets/images/stage-mission-2-1.png" alt="imageStageMission2">
+                        <div class="description-card">
+                            <div class="bg-number">
                                 <h1>2</h1>
                             </div>
                             <div class="information">
@@ -541,11 +559,11 @@
                     </a>
                 </div>
                 <!-- Internship mission 3 -->
-                <div class="carousel_card professional">
+                <div class="carousel-card professional">
                     <a href="html/production_mission3.html">
-                        <img src="asset/image/wordpress.png" alt="imageStageMission2">
-                        <div class="description_card">
-                            <div class="bg_number">
+                        <img src="/src/medias/assets/images/wordpress.png" alt="imageStageMission2">
+                        <div class="description-card">
+                            <div class="bg-number">
                                 <h1>3</h1>
                             </div>
                             <div class="information">
@@ -556,11 +574,11 @@
                     </a>
                 </div>
                 <!-- Internship cuisina -->
-                <div class="carousel_card professional">
+                <div class="carousel-card professional">
                     <a href="html/production_cuisina.html">
-                        <img src="asset/image/stage_cuisina_1.png" alt="imageStageCuisina">
-                        <div class="description_card">
-                            <div class="bg_number">
+                        <img src="/src/medias/assets/images/stage-cuisina-1.png" alt="imageStageCuisina">
+                        <div class="description-card">
+                            <div class="bg-number">
                                 <h1>4</h1>
                             </div>
                             <div class="information">
@@ -577,7 +595,7 @@
         <!-- Background wave animation -->
         <div id="ocean">
             <div id="waves">
-                <img id="key" src="asset/icon/key.png" alt="cle qui sert a trouver un pixel cache">
+                <img id="key" src="/src/medias/assets/icons/key.png" alt="cle qui sert a trouver un pixel cache">
                 <div class="wave" id="wave1"></div>
                 <div class="wave" id="wave2"></div>
                 <div class="wave" id="wave3"></div>
@@ -589,13 +607,14 @@
         <article id="contact">
             <div id="logo-flex">
                 <a href="file/cv_serre_quentin.pdf" download="cv_quentin_serre.pdf"><img
-                        src="asset/icon/icons8-cv-100.png" alt="cvIcon" id="cv_icon"></a>
-                <a href="mailto:quentin.serre@orange.fr"><img src="asset/icon/icons8-mail-96.png" alt="mailIcon"
-                        id="mail_icon"></a>
+                        src="/src/medias/assets/icons/icons8-cv-100.png" alt="cvIcon" id="cv_icon"></a>
+                <a href="mailto:quentin.serre@orange.fr"><img src="/src/medias/assets/icons/icons8-mail-96.png"
+                        alt="mailIcon" id="mail_icon"></a>
                 <a target="_blank" href="https://www.linkedin.com/in/quentin-serre-4153b4241/"><img
-                        src="asset/icon/icons8-linkedin-100.png" alt="linkedinIcon" id="linkedin_icon"></a>
-                <a target="_blank" href="https://github.com/QuentinSerre"><img src="asset/icon/icons8-github-64.png"
-                        alt="githubIcon" id="github_icon"></a>
+                        src="/src/medias/assets/icons/icons8-linkedin-100.png" alt="linkedinIcon"
+                        id="linkedin_icon"></a>
+                <a target="_blank" href="https://github.com/QuentinSerre"><img
+                        src="/src/medias/assets/icons/icons8-github-64.png" alt="githubIcon" id="github_icon"></a>
             </div>
             <h5>Icons by <a href="https://icons8.com">Icons8</a></h5>
             <h4>© Quentin Serre | All right reserved</h4>
@@ -620,9 +639,9 @@
     </footer>
 </body>
 <!-- Link script -->
-<script src="js/nav.js"></script>
-<script src="js/modal.js"></script>
-<script src="js/filterProExp.js"></script>
-<script src="js/ee.js"></script>
+<script src="src/js/nav.js"></script>
+<script src="src/js/modal.js"></script>
+<script src="src/js/filterProExp.js"></script>
+<script src="src/js/ee.js"></script>
 
 </html>

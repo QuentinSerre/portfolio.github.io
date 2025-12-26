@@ -1,0 +1,217 @@
+/* ALL */
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+/* Using the Hammersmith font */
+.hammersmith-one-regular {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+/* h1 for section */
+.bg-title {
+  font-size: 10vh;
+  font-weight: bold;
+  opacity: 0.1;
+  position: absolute;
+  margin: auto;
+  inset: 0;
+}
+
+h2 {
+  margin: 3vh;
+  font-size: 6vh;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* HEADER */
+header img {
+  position: fixed;
+  left: 10px;
+  z-index: 10;
+}
+
+/* HEADER / NAVIGATION */
+header img,
+nav img {
+  width: 40px;
+  top: 10px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: ease-in-out 0.3s;
+}
+
+header img {
+  left: 15px;
+}
+
+nav img:hover,
+header img:hover {
+  opacity: 1;
+}
+
+/* NAVIGATION*/
+/* Menu */
+nav {
+  background-color: #0e0e0e;
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  z-index: 100;
+  transition: all 0.5s;
+  left: -300px;
+}
+nav img {
+  position: absolute;
+  right: 10px;
+  z-index: 200;
+}
+
+li {
+  list-style: none;
+}
+
+li a {
+  font-family: "Inter";
+  padding: 20px;
+  display: block;
+}
+
+/* Sub menu */
+#sub_menu {
+  display: block;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+#sub_menu a {
+  font-size: 16px;
+  padding-left: 50px;
+}
+
+li a:hover {
+  background-color: #1f1530;
+}
+
+/* Sub menu */
+#has_sub_menu:hover #sub_menu {
+  height: 180px;
+}
+
+#sub_menu a:hover {
+  background-color: #1f1530;
+  height: 100%;
+}
+
+/* MAIN */
+main {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+article {
+  text-align: center;
+}
+
+section {
+  padding: 0px 50px 100px 50px;
+}
+
+/* FOOTER */
+footer {
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Contact */
+#contact *:not(a) {
+  margin: 30px;
+}
+
+h5 a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#contact img {
+  width: 48px;
+  margin: 180px 20px 0 20px;
+}
+
+#cv_icon:hover {
+  animation: leftRight 0.5s;
+}
+
+@keyframes leftRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#mail_icon {
+  transition: 0.5s;
+  transform: scale(1, 1);
+}
+
+#mail_icon:hover {
+  transition: 0.5s;
+  transform: scale(-1, 1);
+}
+
+#linkedin_icon:hover {
+  animation: boing 0.5s;
+}
+
+@keyframes boing {
+  0% {
+    transform: scale(1, 0.8);
+  }
+  50% {
+    transform: translate(0px, -8px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+#github_icon {
+  transition: 0.5s;
+  transform: rotate(0deg);
+}
+
+#github_icon:hover {
+  transition: 0.5s;
+  transform: rotate(360deg);
+}

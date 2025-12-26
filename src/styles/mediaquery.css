@@ -1,0 +1,149 @@
+@media only screen and (max-width: 1240px) {
+  /* Skill */
+  .skill-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .bac {
+    margin-left: 10%;
+  }
+
+  .licence {
+    margin-left: 26%;
+  }
+
+  .bts {
+    margin-left: 44%;
+  }
+
+  .future {
+    margin-left: 62%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  /* Career path */
+  #career_path {
+    height: 70vh;
+  }
+
+  .circle,
+  .vertical-line,
+  .career-line {
+    display: none;
+  }
+
+  .licence .vertical-line {
+    display: block;
+    height: 900px;
+    margin-top: 150px;
+  }
+
+  .licence,
+  .bts,
+  .master,
+  .future {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+  }
+
+  .licence {
+    top: -400px;
+  }
+
+  .date-licence {
+    top: 110px;
+    right: 80px;
+  }
+
+  .master {
+    top: 175px;
+  }
+
+  .date-master {
+    top: 110px;
+    right: 80px;
+  }
+
+  .bts {
+    top: 340px;
+  }
+
+  .future {
+    top: 920px;
+  }
+
+  .date-down {
+    top: -355px;
+    right: 80px;
+  }
+
+  /* Production */
+  #description_part {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* Presentation */
+  #presentation {
+    height: 120vh;
+  }
+
+  #presentation img {
+    height: 50vh;
+    right: 12vw;
+  }
+
+  #description {
+    position: absolute;
+    left: 1%;
+    margin-top: 30vh;
+    width: 100%;
+  }
+
+  /* Career path */
+  /* Modal */
+  .modal #option {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  /* Pro exp */
+  .flip-card {
+    height: 910px;
+    width: 100vw;
+    margin: 50px auto 0px auto;
+  }
+
+  .exp-card-front img {
+    width: 80vw;
+  }
+
+  .exp-card-back p,
+  .exp-card-back h4,
+  .exp-card-back li ul li {
+    margin: 0px 30px 0px 30px;
+  }
+
+  .exp-card-back p,
+  .exp-card-back h4,
+  .exp-card-back li {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  #contact img {
+    margin: 180px 3vw 0 3vw;
+  }
+}
+
+@media only screen and (max-width: 439px) {
+  /* Footer */
+  #contact img {
+    margin: 180px 2vw 0 2vw;
+  }
+}

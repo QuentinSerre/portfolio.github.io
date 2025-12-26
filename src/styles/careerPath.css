@@ -1,0 +1,283 @@
+/* Career path */
+#career_path {
+  background: linear-gradient(#3c285e 88%, #1e1e1e);
+  padding: 450px 0px 520px 0px;
+  text-align: center;
+}
+
+#career_path h2 {
+  top: -450px;
+}
+
+.card {
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 5px #363636;
+  padding: 20px;
+  color: #0e0e0e;
+  width: 250px;
+  transition: all 0.3s;
+}
+
+.card h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.card li {
+  padding: 3px;
+  font-size: 18px;
+}
+
+.card > img {
+  width: 96px;
+  position: absolute;
+  top: -45px;
+  right: -48px;
+  filter: drop-shadow(0px 0px 3px);
+}
+
+.sportIcon {
+  position: absolute;
+  width: 36px;
+  right: 30px;
+  bottom: -8px;
+}
+
+.card:hover {
+  scale: 1.2;
+  box-shadow: 0px 0px 15px #363636;
+}
+
+/* Career tree */
+.abs-elm-centered {
+  margin-left: auto;
+  margin-right: auto;
+  inset: 0;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 20px;
+}
+/* Up */
+.date-up {
+  top: -50px;
+}
+/* Down */
+.date-down {
+  top: 30px;
+}
+
+.career-line {
+  width: 80%;
+  height: 0;
+  inset: 0;
+  margin: auto;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+}
+
+.vertical-line {
+  position: absolute;
+  height: 120px;
+  width: 0px;
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  z-index: 10;
+  top: -8px;
+  position: absolute;
+}
+
+.start-point {
+  left: -8px;
+}
+
+.career-point {
+  background-color: #fcb222;
+  transition: all 0.3s;
+}
+
+.career-point:hover {
+  scale: 2;
+}
+
+.end_point {
+  right: -8px;
+}
+
+/* Licence position elm */
+.licence {
+  position: absolute;
+  margin-left: 15%;
+}
+
+/* Licence card */
+.licence-card {
+  top: 120px;
+}
+
+/* Bts position elm */
+.bts {
+  position: absolute;
+  margin-left: 31%;
+}
+
+.bts-line {
+  top: -120px;
+}
+
+/* Bts card */
+.bts-card {
+  top: -345px;
+  cursor: pointer;
+}
+
+/* Touch Icon */
+#touch_icon {
+  opacity: 0;
+  width: 64px;
+  right: 210px;
+  top: 15px;
+  animation: touch 4s infinite;
+}
+
+/* Master position elm */
+.master {
+  position: absolute;
+  margin-left: 49%;
+}
+
+/* Master card */
+.master-card {
+  top: 120px;
+}
+
+@keyframes touch {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0;
+  }
+}
+
+/* Futur position elm */
+.future {
+  position: absolute;
+  margin-left: 66%;
+}
+
+.future-line {
+  top: -120px;
+}
+
+/* Futur card */
+.future-card {
+  top: -340px;
+}
+
+/* Modal Bts */
+.overlay {
+  z-index: 100;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  background-color: #00000075;
+  transform: 2s all;
+  display: none;
+}
+
+.overlay div {
+  padding: 20px;
+}
+
+.modal {
+  background-color: #ffffff;
+  color: #0e0e0e;
+  padding: 15px;
+  border-radius: 20px;
+  width: 68vw;
+  height: 70vh;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  overflow: scroll;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal img {
+  position: absolute;
+  right: 20px;
+  width: 24px;
+  cursor: pointer;
+}
+
+.modal h3 {
+  font-weight: bold;
+  margin: 15px;
+}
+
+#option {
+  display: flex;
+}
+
+#left_modal ul,
+#right_modal ul {
+  text-align: left;
+}
+
+#option h4 {
+  font-weight: 500;
+}
+
+#option li {
+  margin: 10px 0 0 35px;
+  list-style: inside;
+  list-style-position: outside;
+}
+
+.show-modal {
+  opacity: 1;
+  display: block;
+  animation: AnimModal 0.3s;
+}
+
+.hide-modal {
+  opacity: 0;
+  display: none;
+  animation: AnimModal reverse 0.3s;
+}
+
+@keyframes AnimModal {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
