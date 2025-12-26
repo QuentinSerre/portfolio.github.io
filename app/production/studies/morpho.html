@@ -6,12 +6,12 @@
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morpho</title>
-    <link rel="shortcut icon" href="../asset/icon/icons8-identity-24.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/src/medias/assets/icons/icons8-identity-24.png" type="image/x-icon">
     <!-- Link sylesheet -->
-    <link rel="stylesheet" href="../stylesheet/stylesheet.css">
-    <link rel="stylesheet" href="../stylesheet/carousel.css">
-    <link rel="stylesheet" href="../stylesheet/production.css">
-    <link rel="stylesheet" href="../stylesheet/background_wave.css">
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <link rel="stylesheet" href="/src/styles/production.css">
+    <link rel="stylesheet" href="/src/styles/carousel.css">
+    <link rel="stylesheet" href="/src/styles/backgroundWave.css">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,28 +28,28 @@
 <body>
     <header>
         <!-- Open icon menu -->
-        <img src="../asset/icon/icons8-menu-96.png" alt="openMenuIcon" onclick="openCloseNav()">
+        <img src="/src/medias/assets/icons/icons8-menu-96.png" alt="openMenuIcon" onclick="openCloseNav()">
     </header>
     <!-- Navigation menu -->
     <nav id="nav_menu">
         <!-- Close menu icon -->
-        <img src="../asset/icon/icons8-cross-96.png" alt="openMenuIcon" onclick="openCloseNav()">
+        <img src="/src/medias/assets/icons/icons8-cross-96.png" alt="openMenuIcon" onclick="openCloseNav()">
         <ul>
             <!-- Profile -->
-            <li id="has_sub_menu"><a href="../index.html#profile">Profil</a>
+            <li id="has_sub_menu"><a href="/index.html#profile">Profil</a>
                 <!-- Sub menu -->
                 <ul id="sub_menu">
-                    <li><a href="../index.html#profile">Présentation</a></li>
-                    <li><a href="../index.html#career_path">Parcours</a></li>
-                    <li><a href="../index.html#skill">Compétences</a></li>
+                    <li><a href="/index.html#profile">Présentation</a></li>
+                    <li><a href="/index.html#career_path">Parcours</a></li>
+                    <li><a href="/index.html#skill">Compétences</a></li>
                 </ul>
             </li>
             <!-- Professional Experience -->
-            <li><a href="../index.html#pro_exp">Expériences Professionelles</a></li>
+            <li><a href="/index.html#pro_exp">Expériences Professionelles</a></li>
             <!-- Project -->
-            <li><a href="../index.html#production">Réalisations</a></li>
+            <li><a href="/index.html#production">Réalisations</a></li>
             <!-- Technological watch -->
-            <li><a href="technological.html">Veille Technologique</a></li>
+            <li><a href="/app/technological/technological.html">Veille Technologique</a></li>
             <!-- Contact -->
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -59,13 +59,14 @@
     <main>
         <section id="description_art">
             <h1>Morpho</h1>
-            <div class="description_container">
+            <div class="description-container">
                 <h2>
-                    Création d'un convertisseur audio .MP3 vers .AAC format web. Le site utlise un dépôt de fichier afin de pouvoir convertir les audios fournis par l'utilisateur.
+                    Création d'un convertisseur audio .MP3 vers .AAC format web. Le site utlise un dépôt de fichier afin
+                    de pouvoir convertir les audios fournis par l'utilisateur.
                 </h2>
             </div>
             <div id="description_part">
-                <div class="description_container" id="description_left">
+                <div class="description-container" id="description_left">
                     <p>Déroulement du projet</p>
                     <ul>
                         <li>Création d'une maquette</li>
@@ -73,7 +74,7 @@
                         <li>Phase de test, debug</li>
                     </ul>
                 </div>
-                <div class="description_container" id="description_right">
+                <div class="description-container" id="description_right">
                     <p>Gestion projet</p>
                     <ul>
                         <li>Mise en place de tâches</li>
@@ -81,7 +82,7 @@
                 </div>
             </div>
             <div id="description_part">
-                <div class="description_container" id="description_left">
+                <div class="description-container" id="description_left">
                     <p>Compétences & Outils</p>
                     <ul>
                         <li>Outils utilisés : Xampp, Git, VSCode</li>
@@ -94,38 +95,39 @@
                         </li>
                     </ul>
                 </div>
-                <div class="description_container" id="description_right">
+                <div class="description-container" id="description_right">
                     <p>Difficultés rencontrées</p>
                     <ul>
                         <li>Trouver une Techonologie adapté au projet pour convertir un audio</li>
                     </ul>
                 </div>
             </div>
-            <div class="description_container">
+            <div class="description-container">
                 <h2>Bilan</h2>
                 <p>
                     La réalisation de ce projet m'a permis de vérifier l'acquisition de plusieurs compétences vues
-                    durant ma première année de BTS. De plus, j'ai appris à me servir de nouvelles technologies comme FFMPEG.
+                    durant ma première année de BTS. De plus, j'ai appris à me servir de nouvelles technologies comme
+                    FFMPEG.
                     J'ai aussi apprécié la liberté proposée par ce projet lors de sa création.
                 </p>
             </div>
         </section>
-        <section class="carousel_container">
+        <section class="carousel-container">
             <!-- Photo production -->
-            <div class="carousel_card show">
-                    <img src="../asset/image/morpho_1.png" alt="imageMorpho1">
+            <div class="carousel-card show">
+                <img src="/src/medias/assets/images/morpho-1.png" alt="imageMorpho1">
             </div>
-            <div class="carousel_card show">
-                    <img src="../asset/image/morpho_2.png" alt="imageMorpho2">
+            <div class="carousel-card show">
+                <img src="/src/medias/assets/images/morpho-2.png" alt="imageMorpho2">
             </div>
-            <div class="carousel_card show">
-                    <img src="../asset/image/morpho_3.png" alt="imageMorpho3">
+            <div class="carousel-card show">
+                <img src="/src/medias/assets/images/morpho-3.png" alt="imageMorpho3">
             </div>
-            <div class="carousel_card show">
-                    <img src="../asset/image/morpho_4.png" alt="imageMorpho4">
+            <div class="carousel-card show">
+                <img src="/src/medias/assets/images/morpho-4.png" alt="imageMorpho4">
             </div>
-            <div class="carousel_card show">
-                    <img src="../asset/image/morpho_5.png" alt="imageMorpho5">
+            <div class="carousel-card show">
+                <img src="/src/medias/assets/images/morpho-5.png" alt="imageMorpho5">
             </div>
         </section>
     </main>
@@ -143,10 +145,15 @@
         <!-- Contact -->
         <article id="contact">
             <div id="logo-grid">
-                <a href="../file/cv_serre_quentin.pdf" download="cv_quentin_serre.pdf"><img src="../asset/icon/icons8-cv-100.png" alt="cvIcon" id="cv_icon"></a>
-                <a href="mailto:quentin.serre@orange.fr"><img src="../asset/icon/icons8-mail-96.png" alt="mailIcon" id="mail_icon"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/quentin-serre-4153b4241/"><img src="../asset/icon/icons8-linkedin-100.png" alt="linkedinIcon" id="linkedin_icon"></a>
-                <a target="_blank" href="https://github.com/QuentinSerre"><img src="../asset/icon/icons8-github-64.png" alt="githubIcon" id="github_icon"></a>
+                <a href="/src/medias/file/cv_serre_quentin.pdf" download="cv_quentin_serre.pdf"><img
+                        src="/src/medias/assets/icons/icons8-cv-100.png" alt="cvIcon" id="cv_icon"></a>
+                <a href="mailto:quentin.serre@orange.fr"><img src="/src/medias/assets/icons/icons8-mail-96.png"
+                        alt="mailIcon" id="mail_icon"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/quentin-serre-4153b4241/"><img
+                        src="/src/medias/assets/icons/icons8-linkedin-100.png" alt="linkedinIcon"
+                        id="linkedin_icon"></a>
+                <a target="_blank" href="https://github.com/QuentinSerre"><img
+                        src="/src/medias/assets/icons/icons8-github-64.png" alt="githubIcon" id="github_icon"></a>
             </div>
             <h5>Icons by <a href="https://icons8.com">Icons8</a></h5>
             <h4>© Quentin Serre | All right reserved</h4>
@@ -154,6 +161,6 @@
     </footer>
 </body>
 <!-- Link scripsheet -->
-<script src="../js/nav.js"></script>
+<script src="/src/js/nav.js"></script>
 
 </html>
