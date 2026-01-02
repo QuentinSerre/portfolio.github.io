@@ -31,6 +31,8 @@
     <!-- Import Press Start 2P font -->
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap"
         rel="stylesheet">
+    <!-- Import animation scroll library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -108,7 +110,7 @@
                         <!-- Vertical line -->
                         <div class="vertical-line licence-line abs-elm-centered"></div>
                         <!-- Card -->
-                        <div class="card licence-card abs-elm-centered">
+                        <div class="card licence-card abs-elm-centered" data-aos="fade-up">
                             <img src="/src/medias/assets/icons/icons8-graduate-94.png" alt="graduateIcon">
                             <h3>Licence Informatique Mathématiques et Applications</h3>
                             <ul>
@@ -125,7 +127,7 @@
                         <!-- Vertical line -->
                         <div class="vertical-line bts-line abs-elm-centered"></div>
                         <!-- Card -->
-                        <div class="card bts-card abs-elm-centered" onclick="openModal()">
+                        <div class="card bts-card abs-elm-centered" onclick="openModal()" data-aos="fade-down">
                             <!-- Touch icon -->
                             <img src="/src/medias/assets/icons/icons8-touch-50.png" id="touch_icon" alt="touch_icon">
                             <img src="/src/medias/assets/icons/icons8-greffier-94.png" alt="graduateIcon">
@@ -145,7 +147,7 @@
                         <!-- Vertical line -->
                         <div class="vertical-line abs-elm-centered"></div>
                         <!-- Card -->
-                        <div class="card master-card abs-elm-centered">
+                        <div class="card master-card abs-elm-centered" data-aos="fade-up">
                             <img src="/src/medias/assets/icons/icons8-diplôme-94.png" alt="graduateIcon">
                             <h3>Licence / Master</h3>
                             <ul>
@@ -163,7 +165,7 @@
                         <!-- Vertical line -->
                         <div class="vertical-line future-line abs-elm-centered"></div>
                         <!-- Card -->
-                        <div class="card future-card abs-elm-centered">
+                        <div class="card future-card abs-elm-centered" data-aos="fade-down">
                             <img src="/src/medias/assets/icons/icons8-ordinateur-portable-94.png" alt="LaptopIcon">
                             <h3>Développeur<br>FullStack</h3>
                             <ul>
@@ -648,6 +650,10 @@
 <script src="src/js/nav.js"></script>
 <script src="src/js/modal.js"></script>
 <script src="src/js/filterProExp.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="src/js/ee.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
