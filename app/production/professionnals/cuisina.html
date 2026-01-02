@@ -28,32 +28,36 @@
 <body>
     <header>
         <!-- Open icon menu -->
-        <img src="/src/medias/assets/icons/icons8-menu-96.png" alt="openMenuIcon" onclick="openCloseNav()">
+        <img class="nav-button" src="/src/medias/assets/icons/icons8-menu-96.png" alt="openMenuIcon"
+            onclick="openCloseNav()">
+        <span id="open_menu_section"></span>
+
+        <!-- Navigation menu -->
+        <nav id="nav_menu">
+            <!-- Close menu icon -->
+            <img class="nav-button" src="/src/medias/assets/icons/icons8-cross-96.png" alt="openMenuIcon"
+                onclick="openCloseNav()">
+            <ul>
+                <!-- Profile -->
+                <li id="has_sub_menu"><a href="/index.html#profile">Profil</a>
+                    <!-- Sub menu -->
+                    <ul id="sub_menu">
+                        <li><a href="/index.html#profile">Présentation</a></li>
+                        <li><a href="/index.html#career_path">Parcours</a></li>
+                        <li><a href="/index.html#skill">Compétences</a></li>
+                    </ul>
+                </li>
+                <!-- Professional Experience -->
+                <li><a href="/index.html#pro_exp">Expériences Professionelles</a></li>
+                <!-- Project -->
+                <li><a href="/index.html#production">Réalisations</a></li>
+                <!-- Technological watch -->
+                <li><a href="/app/technological/technological.html">Veille Technologique</a></li>
+                <!-- Contact -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <!-- Navigation menu -->
-    <nav id="nav_menu">
-        <!-- Close menu icon -->
-        <img src="/src/medias/assets/icons/icons8-cross-96.png" alt="openMenuIcon" onclick="openCloseNav()">
-        <ul>
-            <!-- Profile -->
-            <li id="has_sub_menu"><a href="/index.html#profile">Profil</a>
-                <!-- Sub menu -->
-                <ul id="sub_menu">
-                    <li><a href="/index.html#profile">Présentation</a></li>
-                    <li><a href="/index.html#career_path">Parcours</a></li>
-                    <li><a href="/index.html#skill">Compétences</a></li>
-                </ul>
-            </li>
-            <!-- Professional Experience -->
-            <li><a href="/index.html#pro_exp">Expériences Professionelles</a></li>
-            <!-- Project -->
-            <li><a href="/index.html#production">Réalisations</a></li>
-            <!-- Technological watch -->
-            <li><a href="/app/technological/technological.html">Veille Technologique</a></li>
-            <!-- Contact -->
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
     <!-- Content -->
     <main>
