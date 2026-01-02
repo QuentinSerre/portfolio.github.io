@@ -1,14 +1,14 @@
 // Open, close navigation menu
-function openCloseNav(){
+function openCloseNav() {
 
     var menu = document.getElementById("nav_menu");
 
     // navigation menu is closed
-    if (menu.style.transform == 'translateX(0%)' | menu.style.transform == ""){
+    if (menu.style.transform == 'translateX(0px)' | menu.style.transform == "") {
         // Open navigation menu
-        menu.style.transform = 'translateX(100%)';
+        menu.style.transform = 'translateX(350px)';
     } else {
         // Close navigation menu
-        menu.style.transform = 'translateX(0%)';
+        menu.style.transform = 'translateX(0px)';
     }
 }

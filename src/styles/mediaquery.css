@@ -24,6 +24,13 @@
 }
 
 @media only screen and (max-width: 850px) {
+  /* Navigaiton menu */
+  .nav-button {
+    display: block;
+  }
+  #open_menu_section {
+    display: none;
+  }
   /* Career path */
   #career_path {
     height: 70vh;
