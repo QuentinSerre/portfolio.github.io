@@ -8,7 +8,7 @@
 }
 
 .wave {
-  background: url("/src/medias/assets/images/wave.png");
+  background: url("../medias/assets/images/wave.png");
   background-size: 100% 400px;
   position: absolute;
   width: 100%;
